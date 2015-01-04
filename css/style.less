@@ -1,1 +1,64 @@
 @import 'origin.less';
+@import 'less/bootstrap.less';
+
+.row * {
+	box-sizing: border-box;
+}
+
+.row {
+	&::before, &::after {
+		content: ' ';
+		display: table;
+		clear: both;
+		box-sizing: border-box;
+	}
+}
+
+/* col */
+.col-3, .col-7 {
+	float: left;
+	box-sizing: border-box;
+}
+
+.clear-col {
+	clear: both;
+}
+
+.col-7 {
+	width: 70%;
+}
+
+.col-6 {
+	width: 60%;
+}
+
+.col-4 {
+	width: 40%;
+}
+
+.col-3 {
+	width: 30%;
+}
+
+.col-7 .sxdl dd {
+	width: auto;
+}
+
+.shaixuan .col-7 {
+	border-right: 1px solid #ddd; 
+}
+
+.shaixuan .col-3 {
+	padding: 0 30px;
+}
+
+.shaixuan .col-3 a {
+	display: block;
+	line-height: 20px;
+}
+
+.shaixuan .col-3 h2 {
+	font-size: 18px;
+	line-height: 20px;
+	margin-bottom: 18px;
+}
