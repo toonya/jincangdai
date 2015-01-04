@@ -1,0 +1,721 @@
+@charset "utf-8";
+/* CSS Document */
+/* ----------- 首页 --------------- */
+.banner {
+  width: auto;
+  height: 360px;
+}
+/* 登陆框 */
+.login_layer {
+  width: 1000px;
+  height: 0px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 999;
+}
+.loginbox {
+  width: 240px;
+  height: 250px;
+  background: url(../images/loginbg.png) repeat;
+  position: absolute;
+  top: 30px;
+  right: 0px;
+  padding: 20px 30px;
+}
+.logsel {
+  width: auto;
+  height: 36px;
+  background-color: #fff;
+  margin-top: 10px;
+}
+.logsel label {
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  float: left;
+}
+.logsel .label_1 {
+  background: url(../images/lg-yhm.jpg) no-repeat;
+}
+.logsel .label_2 {
+  background: url(../images/lg-mima.jpg) no-repeat;
+}
+.logsel .label_3 {
+  background: url(../images/lg-yzm.jpg) no-repeat;
+}
+.logsel .text {
+  height: 36px;
+  padding: 0px 12px;
+  padding-left: 10px;
+  line-height: 36px;
+  color: #787878;
+  font-size: 14px;
+  border: none;
+  float: left;
+  width: 180px;
+}
+.logsel .yzm {
+  float: right;
+  width: 100px;
+  margin-top: 3px;
+}
+.loginbox a.enbtn {
+  display: block;
+  width: auto;
+  height: 36px;
+  line-height: 36px;
+  font-size: 18px;
+  font-family: "microsoft yahei";
+  background-position: 0px -100px;
+  background-repeat: repeat-x;
+  color: #fff;
+  text-align: center;
+}
+.loginbox .zcmm {
+  color: #f0f0f0;
+}
+.loginbox .zcmm:hover {
+  color: #fff;
+}
+/* 图片滑动切换 */
+#full-screen-slider {
+  width: 100%;
+  height: 360px;
+  position: relative;
+}
+#slides {
+  display: block;
+  width: 100%;
+  height: 360px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+#slides li {
+  display: block;
+  width: 100%;
+  height: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+}
+#slides li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-indent: -9999px;
+}
+#pagination {
+  display: block;
+  position: absolute;
+  left: 45%;
+  bottom: 20px;
+  z-index: 9900;
+  margin: 0;
+}
+#pagination li {
+  display: block;
+  width: 12px;
+  height: 12px;
+  float: left;
+  margin: 0 10px;
+  border-radius: 10px;
+  background-color: #eee;
+  overflow: hidden;
+}
+#pagination li a {
+  display: block;
+  height: 100%;
+  text-indent: 2em;
+}
+#pagination li.current {
+  background: #ffb900;
+}
+.slidexia {
+  width: 1000px;
+  margin: 0 auto;
+  height: 5px;
+  background: url(../images/slidexia.jpg) no-repeat;
+  margin-top: 1px;
+}
+/* 统计 */
+.tongji {
+  padding: 40px 0;
+  /*border-bottom:1px solid #ccc;*/
+  position: relative;
+}
+.tongji dl {
+  width: 366px;
+  float: left;
+}
+.tongji dl dt {
+  width: 126px;
+  height: 126px;
+  float: left;
+  margin-top: 12px;
+  margin-left: 15px;
+}
+.tongji .tj_tzr {
+  background: url(../images/tj_tzr.png) no-repeat;
+}
+.tongji .tj_tzje {
+  background: url(../images/tj_tzje.png) no-repeat;
+}
+.tongji .tj_zqsy {
+  background: url(../images/tj_zqsy.png) no-repeat;
+}
+.tongji dl dd {
+  width: 225px;
+  float: right;
+  line-height: 1.5;
+  margin-top: 20px;
+}
+.tongji dl:hover dd * {
+  color: #900;
+  cursor: pointer;
+}
+/* 投资项目 */
+.xiangmu {
+  padding: 20px;
+  border-bottom: 1px solid #d8d8d8;
+  position: relative;
+}
+.xiangmu:hover {
+  background-color: #f8f8f8;
+}
+.xiangmu ul li {
+  width: 290px;
+  float: left;
+  font-size: 14px;
+  line-height: 24px;
+}
+.xiangmu .tzbtn {
+  background: url(../images/tzbtn.png) no-repeat;
+  display: block;
+  width: 90px;
+  height: 90px;
+  line-height: 90px;
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+}
+.xiangmu .tzbtn2 {
+  background-position: -100px -180px;
+}
+.xiangmu .tzbtn,
+.xiangmu .tzbtn2 {
+  color: #fff;
+}
+.jindu {
+  display: inline-block;
+  width: 150px;
+  height: 12px;
+  background-color: #e0e0e0;
+  margin: 0 10px;
+  float: left;
+  margin-top: 7px;
+}
+.jindu span {
+  display: inline-block;
+  height: 12px;
+  background-color: #ffb900;
+}
+/* 新闻公告 */
+.xwgg {
+  background-color: #f4f4f4;
+  padding: 10px 30px 20px;
+  border-bottom: 1px solid #ccc;
+}
+.gonggao {
+  width: 400px;
+  float: left;
+  position: relative;
+}
+.gonggao h4 {
+  background: url(../images/laba.png) 0 15px no-repeat;
+  padding-left: 30px;
+}
+.gonggao .list li {
+  height: 30px;
+  line-height: 30px;
+  border: none;
+}
+.gonggao .list li:hover {
+  background-color: transparent;
+}
+.news {
+  width: 500px;
+  float: right;
+}
+.news .tu {
+  width: 180px;
+  height: 120px;
+  float: left;
+}
+.news .tu img {
+  width: 180px;
+  height: 120px;
+}
+.news ul {
+  width: 300px;
+  float: right;
+}
+.news ul li {
+  font-size: 14px;
+  line-height: 30px;
+}
+/* 中间banner */
+.mid-banner {
+  background: url(../images/mid-banner.png) no-repeat;
+  width: 1100px;
+  height: 128px;
+}
+/* 投资项目table */
+.tz_tab {
+  width: 100%;
+  /*background:url(../images/tztitbg.png) right 19px no-repeat;*/
+}
+.tz_tab th,
+.tz_tab td {
+  line-height: 60px;
+  padding: 0 5px;
+}
+.tz_tab th {
+  font-size: 14px;
+  font-weight: normal;
+}
+.tz_tab td {
+  font-size: 16px;
+  border-bottom: 1px solid #d8d8d8;
+  text-align: center;
+}
+.tz_tab tr:hover td {
+  background-color: #f4f4f4;
+  cursor: pointer;
+}
+.tz_tab td.xmm {
+  text-align: left;
+  padding-left: 10px;
+}
+.tz_tab td.xmm img {
+  float: left;
+  margin-top: 20px;
+  margin-right: 10px;
+}
+.tz_tab .tzbtn {
+  display: inline-block;
+  width: 80px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+  background-color: #ffb900;
+}
+.tz_tab .tzbtn2 {
+  background-color: #b6cdab;
+}
+.tz_tab .y-rate {
+  font-size: 24px;
+  font-weight: bold;
+}
+/* ----------- 我要投资 --------------- */
+.shaixuan {
+  padding: 20px 30px;
+  border: 1px solid #ccc;
+  background-color: #f8f8f8;
+}
+.sxdl dt {
+  width: 75px;
+  float: left;
+  font-size: 14px;
+}
+.sxdl dd {
+  width: 860px;
+  float: left;
+  font-size: 14px;
+}
+.sxdl dd a {
+  float: left;
+  line-height: 24px;
+  padding: 0px 20px;
+  white-space: nowrap;
+}
+.sxdl dd a.on {
+  background-color: #ffb900;
+  color: #fff;
+  border-radius: 20px;
+}
+/* ----------- 项目详情 --------------- */
+.other_ul li {
+  float: left;
+  width: 270px;
+  font-size: 14px;
+}
+.jindu2 {
+  display: inline-block;
+  width: 400px;
+  height: 16px;
+  background-color: #e0e0e0;
+}
+.jindu2 span {
+  display: inline-block;
+  height: 16px;
+  background-color: #900;
+}
+.detail_r {
+  width: 360px;
+  height: 200px;
+  border: 1px solid #d8d8d8;
+  background-color: #f8f8f8;
+  font-size: 14px;
+}
+.dbtu img {
+  width: 600px;
+}
+/* ----------- 我要融资 --------------- */
+.steps {
+  position: relative;
+}
+.steps .line {
+  width: 860px;
+  height: 12px;
+  background-color: #f0f0f0;
+  position: absolute;
+  top: 24px;
+  left: 60px;
+  z-index: -1;
+}
+.step {
+  float: left;
+  text-align: center;
+  width: 166px;
+}
+.step i {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  color: #fff;
+  background: url(../images/i.png);
+  font-size: 30px;
+}
+.step p {
+  width: auto;
+  line-height: 60px;
+  text-align: center;
+  font-size: 18px;
+}
+.step2 i {
+  background-position: -100px -280px;
+  color: #555;
+}
+.step2 p {
+  color: #999;
+}
+/* ----------- 我要借款 ----------------*/
+/*
+#triangle-bottomleft { width: 0; height: 0; border-bottom: 50px solid #55c31f; border-right: 50px solid transparent; } 
+.loan-header { width: 300px; height: 50px; background: #55c31f; }
+*/
+.loan-header {
+  border-bottom: 3px solid #55c31f;
+}
+#loan-table {
+  border-collapse: collapse;
+  border: none;
+  font-size: 14px;
+  margin-top: 30px;
+}
+#loan-table caption {
+  text-align: left;
+}
+#loan-table td {
+  border: 1px solid #fff;
+  padding: 3px 8px;
+}
+.loan-table-1 tr:nth-child(odd) {
+  background: #d2f1ff;
+}
+.loan-table-2 tr:nth-child(odd) {
+  background: #dee7d9;
+}
+.loan-table-3 tr:nth-child(odd) {
+  background: #fff0c7;
+}
+p.loan-apply-con {
+  color: #999;
+}
+/* ----------- 帮助中心 --------------- */
+#left {
+  width: 200px;
+  min-height: 450px;
+  float: left;
+  background: url(../images/leftbg.jpg) right repeat-y;
+  background-color: #f8f8f8;
+}
+#right {
+  width: 800px;
+  float: right;
+}
+.left_ul > li {
+  width: auto;
+  height: auto;
+  line-height: 36px;
+  padding-left: 20px;
+  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #fff;
+  font-size: 14px;
+}
+.left_ul li {
+  position: relative;
+}
+.left_ul li i {
+  display: block;
+  width: 6px;
+  height: 10px;
+  background-position: -20px -20px;
+  position: absolute;
+  top: 13px;
+  *top: 6px;
+  right: 20px;
+}
+.left_ul li ol li i {
+  top: 7px;
+  *top: 3px;
+}
+.title {
+  height: 48px;
+  line-height: 48px;
+  border-bottom: 2px solid #e8e8e8;
+}
+.title span {
+  float: left;
+  border-bottom: 2px solid #900;
+}
+.right_con p {
+  font-size: 14px;
+  line-height: 24px;
+}
+/* ----------- 账户管理 --------------- */
+.wdzh {
+  padding: 30px 0;
+  border-bottom: 1px solid #ccc;
+}
+.wdzh .caozuo {
+  background-color: #f0f0f0;
+  border: 1px solid #d8d8d8;
+  padding: 3px 15px;
+}
+.wdzh .rzzt i {
+  display: inline-block;
+  width: 18px;
+  height: 12px;
+  margin-top: -2px;
+  *margin-top: 0;
+  vertical-align: middle;
+}
+.i_sf {
+  background-position: -60px 0;
+}
+.i_sf2 {
+  background-position: -120px 0;
+}
+.i_yx {
+  background-position: -80px 0;
+}
+.i_yx2 {
+  background-position: -140px 0;
+}
+.i_sj {
+  background-position: -100px 0;
+}
+.i_sj2 {
+  background-position: -160px 0;
+}
+.tjcard {
+  width: 130px;
+  height: 70px;
+  background-color: #9b0;
+  padding: 20px 0px 0 70px;
+}
+.tjcard a {
+  font-size: 14px;
+  color: #fff;
+}
+.tjcard a i {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-position: -200px -200px;
+  margin-left: 20px;
+}
+/* ----------- 交易查询 --------------- */
+.tradetab {
+  height: 48px;
+  line-height: 48px;
+  border-bottom: 2px solid #e8e8e8;
+}
+.tradetab li {
+  float: left;
+  margin-right: 20px;
+  line-height: 48px;
+  font-size: 24px;
+}
+.tradetab li.act {
+  border-bottom: 2px solid #900;
+}
+.tradetab li.act a {
+  color: #900;
+}
+.query_qzsj {
+  float: left;
+  width: 125px;
+  height: 22px;
+  line-height: 22px;
+  padding: 0px 3px;
+  border: 1px solid #d8d8d8;
+  margin-top: 6px;
+  position: relative;
+}
+.query_qzsj i {
+  width: 16px;
+  height: 16px;
+  background-position: -180px 0;
+  cursor: pointer;
+  position: absolute;
+  top: 3px;
+  right: 3px;
+}
+.query_time a {
+  margin-left: 15px;
+}
+.sxdl2 dt {
+  width: 70px;
+  float: left;
+}
+.sxdl2 dd {
+  width: 650px;
+  float: left;
+}
+.sxdl2 dd a {
+  float: left;
+  line-height: 24px;
+  padding: 0px 15px;
+  margin-bottom: 5px;
+  white-space: nowrap;
+}
+.sxdl2 dd a.on {
+  background-color: #9b0;
+  color: #fff;
+  border-radius: 20px;
+}
+.tabpages .text {
+  width: 25px;
+  height: 16px;
+  line-height: 16px;
+  text-align: center;
+}
+.tabpages .go {
+  width: 25px;
+  line-height: 18px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-left: none;
+}
+/* ----------- 融资项目管理 --------------- */
+.tab .query_qzsj {
+  float: none;
+  width: 200px;
+  margin: 0;
+}
+/* ----------- 安全中心 --------------- */
+.anqjb {
+  height: 70px;
+  background: url(../images/suo.jpg) right no-repeat;
+  padding-top: 20px;
+  margin-top: 20px;
+}
+.anqfw {
+  border-bottom: 1px solid #d8d8d8;
+  line-height: 60px;
+}
+.anqfw:hover {
+  background-color: #f8f8f8;
+}
+.anqfw .btn {
+  margin-top: 18px;
+}
+/* ----------- 消息中心 --------------- */
+.tab2 .i_xiaoxi {
+  width: 14px;
+  height: 12px;
+  background-position: -200px 0;
+  display: inline-block;
+}
+.tab2 .i_xiaoxi2 {
+  background-position: -220px 0;
+}
+/* ----------- 登录注册 --------------- */
+.login {
+  padding: 50px 100px;
+}
+.login .btn3 span {
+  margin-left: 60px;
+  padding-right: 60px;
+}
+.yzm {
+  margin-top: -4px;
+  *margin-top: 0;
+  vertical-align: middle;
+}
+.login .line {
+  width: 700px;
+}
+.login .step {
+  width: 100px;
+}
+.login .step p {
+  font-size: 14px;
+}
+/* ----------- 20140916添加 --------------- */
+.log_sel {
+  width: 488px;
+  height: 450px;
+  float: left;
+  background-color: #f8f8f8;
+}
+.log_sel_tit {
+  width: auto;
+  height: 60px;
+  line-height: 60px;
+  font-size: 18px;
+  padding-left: 20px;
+  color: #fff;
+  background-color: #ffbb40;
+}
+.log_sel .btn3 span {
+  margin-left: 60px;
+  padding-right: 60px;
+}
+.right_con h4 {
+  color: #740013;
+  text-align: center;
+  line-height: 36px;
+}
+.right_con .info {
+  text-align: center;
+  font-size: 12px;
+  line-height: 24px;
+  margin: 10px 0;
+}
+.right_con .info span {
+  margin: 0px 10px;
+  color: #555;
+}
