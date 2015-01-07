@@ -1,6 +1,9 @@
 @import 'origin.less';
 @import 'less/bootstrap.less';
 
+@c-border: #CCCCCC;
+@c-bg-y: #FDB82C;
+
 .row * {
 	box-sizing: border-box;
 }
@@ -61,4 +64,39 @@
 	font-size: 18px;
 	line-height: 20px;
 	margin-bottom: 18px;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.col-border {
+	border-right: 1px solid @c-border;
+}
+
+.tz_tab tr.ft12 td{
+	font-size: 12px;
+}
+
+.rank {
+	position: relative;
+	color: #fff;
+	z-index: 1;
+
+	&::before {
+		position: absolute;
+		width: 32px;
+		height: 32px;
+		background: @c-bg-y;
+		border-radius: 16px;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		content: ' ';
+		z-index: -1;
+	}
 }
