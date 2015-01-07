@@ -413,7 +413,7 @@
   font-size: 18px;
 }
 .step2 i {
-  background-position: -100px -280px;
+  background: url(../images/i-step2.png);
   color: #555;
 }
 .step2 p {
