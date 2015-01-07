@@ -1866,3 +1866,61 @@ ul.nav .sub::after {
   float: left;
   border-bottom: 2px solid #ffb900;
 }
+.step2 i {
+  background:url(../images/i-step2.png);
+  color: #555;
+}
+html body div.con {
+  background: #f7f7f7;
+  padding: 15px 50px;
+}
+body#index-body {
+  background: #fff;
+}
+.tz_tab td.xmm {
+  padding-left: 0;
+}
+.shaixuan {
+  background: #fff;
+}
+body#index-body div.con {
+  padding: 0;
+  width: 1100px;
+  background: #fff;
+}
+.loan-item {
+  width: 32%;
+  margin-right: 11px;
+  overflow: hidden;
+  border-radius: 5px;
+  background: white;
+}
+.loan-item-inner {
+    padding: 5px 20px;
+}
+.loan-item h2 {
+  padding: 10px 20px;
+}
+.loan-item h2 {
+  color: white;
+  width: 100%;
+}
+.bg-blue {
+  background: #81b0c5;
+}
+.bg-green {
+  background: #3ea96b;
+}
+.bg-yellow {
+  background: #bb9738;
+}
+
+.loan-table {
+  border-collapse: collapse;
+  border: none;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.rank::before {
+  background: #55c31f;
+}
