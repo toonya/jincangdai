@@ -9,7 +9,7 @@ $(function(){
 			var lh = $("#left").height();
 			var rh = $("#right").height();
 			if(lh < rh){
-				$("#left").height(rh - 0);
+				// $("#left").height(rh - 0);
 			}else{
 				$("#right").height(lh);		
 			}

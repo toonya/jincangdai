@@ -1859,8 +1859,9 @@ ul.nav .sub::after {
   background-position: -5400px 0;
 }
 #right {
-  width: 880px;
+  width: 780px;
   float: right;
+  background: white;
 }
 .title span {
   float: left;
@@ -1923,4 +1924,11 @@ body#index-body div.con {
 }
 .rank::before {
   background: #55c31f;
+}
+#left {
+  background: #f0f0f0;
+}
+.transfer-list {
+  background: white;
+  padding: 10px 30px 0 30px;
 }
