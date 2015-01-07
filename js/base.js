@@ -2,14 +2,19 @@
 
 $(function(){
 	
-	//设置心左右高度相等
-	var lh = $("#left").height();
-	var rh = $("#right").height();
-	if(lh < rh){
-		$("#left").height(rh - 0);
-	}else{
-		$("#right").height(lh);		
-	}
+
+	$(document).ready(function(){
+		setTimeout(function(){
+			//设置心左右高度相等
+			var lh = $("#left").height();
+			var rh = $("#right").height();
+			if(lh < rh){
+				$("#left").height(rh - 0);
+			}else{
+				$("#right").height(lh);		
+			}
+		},100);
+	})
 	
 	//滑动效果在显示和隐藏状态之间切换
 	$("#subMenu li a").each(function(){

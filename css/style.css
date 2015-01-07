@@ -1858,3 +1858,11 @@ ul.nav .sub::after {
 .ui-progressbar-mid-100 {
   background-position: -5400px 0;
 }
+#right {
+  width: 880px;
+  float: right;
+}
+.title span {
+  float: left;
+  border-bottom: 2px solid #ffb900;
+}
