@@ -1435,3 +1435,7 @@ p.loan-apply-con {
   line-height: 20px;
   margin-bottom: 18px;
 }
+
+div.about-con p {
+  text-indent: 2em;
+}
