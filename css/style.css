@@ -1872,7 +1872,7 @@ ul.nav .sub::after {
   color: #555;
 }
 html body div.con {
-  background: #f7f7f7;
+ /* background: #f7f7f7;*/
   padding: 15px 50px;
 }
 body#index-body {
@@ -1915,6 +1915,9 @@ body#index-body div.con {
 .bg-yellow {
   background: #bb9738;
 }
+.bg-white {
+  background: white;
+}
 
 .loan-table {
   border-collapse: collapse;
@@ -1932,3 +1935,16 @@ body#index-body div.con {
   background: white;
   padding: 10px 30px 0 30px;
 }
+.tradetab li.act a {
+  color: #ffb900;
+}
+.tradetab li.act {
+  border-bottom: 2px solid #ffb900
+}
+.sxdl2 dd a.on { background-color: #21aeef; }
+.query_qzsj i { background: url(../images/calendar.png); }
+.left_ul li i { background: url(../images/r-arrow.png); }
+.i_sf { background: url(../images/namecard.png); }
+.jindu2 span { background-color: #55c31f; }
+.right_con h4 { color: #ffb900; }
+.log_sel { height: 400px; }
