@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="keywords" content="川商贷">
+        <meta http-equiv="description" content="川商贷">
+        <title>转入-金仓贷</title>
+
+        <link href="css/public.css" type="text/css" rel="stylesheet" />
+        <link href="css/style.css" type="text/css" rel="stylesheet" />
+
+        <!--[if IE 6]>
+<script type="text/javascript" src="js/DD_belatedPNG.js" ></script>
+<script type="text/javascript">   DD_belatedPNG.fix('.png,.logo');   </script>
+<![endif]-->
+        <script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
+        <script type="text/javascript" src="js/base.js"></script>
+
+    </head>
+
+    <body>
+
+        <div class="top">
+            <div class="w1100 mc">
+                <div class="fl">欢迎使用金仓贷！</div>
+                <div class="fr topr"><span>您好，月亮 <a href="#">[安全退出]</a></span><a href="#" class="borl pl20">您有（1）条未读消息</a><a href="#" class="borl pl20">我的账户</a><a href="#" class="borl pl20">充值</a></div>
+            </div>
+        </div>
+
+        <div class="header">
+            <div class="w1100 mc">
+                <a href="index.html" class="logo"><img src="images/logo.png" /></a>
+                <ul class="nav">
+                    <li>
+                        <a href="index.html">首页</a>
+                    </li>
+                    <li>
+                        <a href="loan.html">我要借款</a>
+                    </li>
+                    <li class="sub">
+                        <a href="invest.html">我要投资</a>
+                        <ul>
+                            <li><a href="invest.html">散标投资</a></li>
+                            <li><a href="transfer.html">债权转让</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="account.html" class="c900">账户管理</a>
+                    </li>
+                    <li>
+                        <a href="security.html">安全保障</a>
+                    </li>
+                    <li class="sub">
+                        <a href="company-intro.html">关于我们</a>
+                        <ul>
+                            <li><a href="company-intro.html">公司介绍</a></li>
+                            <li><a href="product-intro.html">产品介绍</a></li>
+                            <li><a href="qualification.html">企业资质</a></li>
+                            <li><a href="contact-us.html">联系我们</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="con clearfix">
+
+            <div id="left" class="bor">
+                <h2 class="mt20 pl20 borb2 lh48">账户管理</h2>
+                <ul id="subMenu" class="left_ul">
+                    <li><a href="account.html" class="c900">我的账户</a><i class="png"></i>
+                        <ol class="pb20 pt5">
+                            <li><a href="account-bank-to.html">划入</a></li>
+                            <li><a href="account-to-bank.html">划出</a></li>
+                            <li><a href="account-info.html">账户资料</a></li>
+                        </ol>
+                    </li>
+                    <li><a href="account-rzxmgl.html">借款项目管理</a>
+                        <ol class="pb20 pt5 hide">
+                            <li><a href="account-rzxmsq.html" class="c900">借款项目申请</a><i class="png"></i></li>
+                        </ol>
+                    </li>
+                    <li><a href="account-jycx.html">交易查询</a></li>
+                    <li><a href="account-safe.html">安全中心</a></li>
+                    <li><a href="account-message.html">消息中心</a></li>
+                </ul>
+            </div> 
+
+            <div id="right" class="bor">
+                <form name="form1" action="#" method="post">
+                    <input type="hidden" name="_viewReferer" value="p/account/addAccountFromBankPre"> 
+                    <input type="hidden" id="BankId" name="BankId" value="1001">
+                    <input type="hidden" id="_locale" name="_locale" value="zh_CN">
+                    <input type="hidden" id="LoginType" name="LoginType" value="C">
+                    <input type="hidden" id="accountNo" name="accountNo" value="">
+                    <input type="hidden" id="bankCode" name="bankCode" value="">
+                    <div class="p40 pt20">
+                        <h2 class="title"><span>转入-从银行划入</span></h2>
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="tab mt20">
+                            <tbody>
+                                <tr>
+                                    <th>账号</th>
+                                    <th>开户行</th>
+                                </tr>
+                                <tr>
+                                    <td><input type="radio" name="bank" /><span class="pl10">62222222222222222</span></td>
+                                    <td>中国农业银行</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="radio" name="bank" /><span class="pl10">63333333333333333</span></td>
+                                    <td>中国工商银行</td>
+                                </tr>
+                            </tbody>
+                        </table> 
+                        <div class="tac mt20">您还未设置默认银行账号，不能使用快捷充值。</div>
+                        <div class="tac mt20">
+                            <input onclick="" type="button" value="快捷充值"><a id="depositUrl" href="#" target="_blank" style="display: none;"><span id="spandepositUrl">快捷充值</span></a>快捷充值，收费标准，及充值限额请参照《快捷充值说明》
+                        </div>
+                        <div class="tac">
+                            <input onclick="" type="button" value="网银充值"><a id="depositUrl" href="#" target="_blank" style="display: none;"><span id="spandepositUrl">网银充值</span></a>网银充值，收费标准，及充值限额请参照《网银充值说明》
+                        </div>
+                        <div class="errors"><span id="EEE"></span> </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div style="width:1000px; margin:0 auto">
+                <div style="width:80%" class="tal fl">
+                    <dl class="friends clearfix"><dt>友情链接</dt><dd><a href="#">华夏川商借款担保</a><a href="#">华夏川商建设</a><a href="#">华夏川商联合投资控股</a></dd></dl>
+                </div>
+                <div style="width:20%" class="tar fl">
+                    <img src="images/test-qrcode.jpg" style="width:100px;">
+                </div>
+                <div class="tac p20">版权所有 © 重庆骐特·金仓贷 渝ICP备00000000号</div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+
+    </body>
+</html>
