@@ -4,7 +4,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta http-equiv="keywords" content="川商贷">
         <meta http-equiv="description" content="川商贷">
-        <title>转出-金仓贷</title>
+        <title>修改支付密码-金仓贷</title>
 
         <link href="css/public.css" type="text/css" rel="stylesheet" />
         <link href="css/style.css" type="text/css" rel="stylesheet" />
@@ -88,35 +88,52 @@
             </div> 
 
             <div id="right" class="bor">
-                <form name="form1" action="#" method="post">
-                    <div class="p40 pt20">
-                        <h2 class="title"><span>转出-转出到银行</span></h2>
-                        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="tab mt20">
-                            <tbody>
+                <div class="p40 pt20">
+                    <h4 class="title">
+                    <span>支付密码修改</span>
+                    </h4>
+                    <form name="form1" action="#" method="post">
+                        <input type="hidden" id="loginPasswordSet" name="loginPasswordSet" value="20">
+                        <div class="clearfix anqfw p10">
+                            <table>
+                                    <tbody><tr>
+                                        <td>
+                                            <label>原密码：</label>
+                                        </td>
+                                        <td>
+                                            <input type="password" id="password" name="password" isrequired="true" class="text" displayname="原密码">
+                                        </td>
+                                    </tr>
+                                
                                 <tr>
-                                    <th>账号</th>
-                                    <th>开户行</th>
+                                    <td>
+                                        <label>新密码：</label>
+                                    </td>
+                                    <td>
+                                        <input type="password" id="newPassword" name="newPassword" isrequired="true" displayname="新密码" value="" class="text" maxlength="20">
+                                        <font color="#FF0000">输入新的平台支付密码</font>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td><label><input type="radio" name="bank" /><span class="pl10">62222222222222222</span></label></td>
-                                    <td>中国农业银行</td>
+                                    <td>
+                                        <label>确认新密码：</label>
+                                    </td>
+                                    <td>
+                                        <input type="password" id="confirmPassword" name="confirmPassword" isrequired="true" displayname="确认新密码" value="" class="text" maxlength="20">
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td><label><input type="radio" name="bank" /><span class="pl10">63333333333333333</span></label></td>
-                                    <td>中国工商银行</td>
+                                    <td colspan="2">
+                                        <a href="#" onclick="" class="png btn fl mt5"><span class="png">提交</span></a>
+                                    </td>
                                 </tr>
-                            </tbody>
-                        </table> 
-                        <div class="tac mt20">您还未设置默认银行账号，不能使用快捷充值。</div>
-                        <div class="tac mt20">
-                            <input onclick="" type="button" value="快捷转出"><span class="pl10"><a id="depositUrl" href="#" target="_blank" style="display: none;"><span id="spandepositUrl">快捷转出</span></a>快捷转出，收费标准，及转出限额请参照《快捷转出说明》</span>
+                            </tbody></table>
+                            <div class="errors">    
+                                <span id="EEE"></span>
+                            </div>
                         </div>
-                        <div class="tac">
-                            <input onclick="" type="button" value="网银转出"><span class="pl10"><a id="depositUrl" href="#" target="_blank" style="display: none;"><span id="spandepositUrl">网银转出</span></a>网银转出，收费标准，及转出限额请参照《网银转出说明》</span>
-                        </div>
-                        <div class="errors"><span id="EEE"></span> </div>
-                    </div>
-                </form>
+                    </form>
+                </div>
             </div>
         </div>
 
