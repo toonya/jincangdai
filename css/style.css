@@ -1435,13 +1435,11 @@ p.loan-apply-con {
   line-height: 20px;
   margin-bottom: 18px;
 }
-
-div.about-con p {
-  text-indent: 2em;
-}
-
 .text-center {
   text-align: center;
+}
+label {
+  cursor: pointer;
 }
 .text-left {
   text-align: left;
@@ -1858,6 +1856,10 @@ ul.nav .sub::after {
 .ui-progressbar-mid-100 {
   background-position: -5400px 0;
 }
+/* mansy's work */
+div.about-con p {
+  text-indent: 2em;
+}
 #right {
   width: 780px;
   float: right;
@@ -1868,11 +1870,11 @@ ul.nav .sub::after {
   border-bottom: 2px solid #ffb900;
 }
 .step2 i {
-  background:url(../images/i-step2.png);
+  background: url(../images/i-step2.png);
   color: #555;
 }
 html body div.con {
- /* background: #f7f7f7;*/
+  /* background: #f7f7f7;*/
   padding: 15px 50px;
 }
 body#index-body {
@@ -1897,7 +1899,7 @@ body#index-body div.con {
   background: white;
 }
 .loan-item-inner {
-    padding: 5px 20px;
+  padding: 5px 20px;
 }
 .loan-item h2 {
   padding: 10px 20px;
@@ -1918,7 +1920,6 @@ body#index-body div.con {
 .bg-white {
   background: white;
 }
-
 .loan-table {
   border-collapse: collapse;
   border: none;
@@ -1939,12 +1940,26 @@ body#index-body div.con {
   color: #ffb900;
 }
 .tradetab li.act {
-  border-bottom: 2px solid #ffb900
+  border-bottom: 2px solid #ffb900;
 }
-.sxdl2 dd a.on { background-color: #21aeef; }
-.query_qzsj i { background: url(../images/calendar.png); }
-.left_ul li i { background: url(../images/r-arrow.png); }
-.i_sf { background: url(../images/namecard.png); }
-.jindu2 span { background-color: #55c31f; }
-.right_con h4 { color: #ffb900; }
-.log_sel { height: 400px; }
+.sxdl2 dd a.on {
+  background-color: #21aeef;
+}
+.query_qzsj i {
+  background: url(../images/calendar.png);
+}
+.left_ul li i {
+  background: url(../images/r-arrow.png);
+}
+.i_sf {
+  background: url(../images/namecard.png);
+}
+.jindu2 span {
+  background-color: #55c31f;
+}
+.right_con h4 {
+  color: #ffb900;
+}
+.log_sel {
+  height: 400px;
+}
