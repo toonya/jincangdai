@@ -121,4 +121,18 @@ $(function(){
 	
 	TT = setTimeout(GOGO, SPEED); 
 
+	// ----------------------------------------
+	// ! file select
+	// ----------------------------------------
+	$('.file-upload').on('change', '#chooseFile', function () {
+	  var filename = $(this).closest('.file-upload').find("#chooseFile").val();
+	  if (/^\s*$/.test(filename)) {
+	    $(this).closest('.file-upload').find(".file-upload").removeClass('active');
+	    $(this).closest('.file-upload').find("#noFile").text("请点击上传文件..."); 
+	  }
+	  else {
+	    $(this).closest('.file-upload').find(".file-upload").addClass('active');
+	    $(this).closest('.file-upload').find("#noFile").text(filename.replace("C:\\fakepath\\", "")); 
+	  }
+	});
 })

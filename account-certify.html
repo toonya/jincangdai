@@ -4,7 +4,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta http-equiv="keywords" content="川商贷">
         <meta http-equiv="description" content="川商贷">
-        <title>划出-金仓贷</title>
+        <title>身份认证-金仓贷</title>
 
         <link href="css/public.css" type="text/css" rel="stylesheet" />
         <link href="css/style.css" type="text/css" rel="stylesheet" />
@@ -74,7 +74,6 @@
                             <li><a href="account-bank-to.html">划入</a></li>
                             <li><a href="account-to-bank.html">划出</a></li>
                             <li><a href="account-info.html">账户资料</a></li>
-                            <li><a href="account-invitation.html">我的邀请</a></li>
                         </ol>
                     </li>
                     <li><a href="account-rzxmgl.html">借款项目管理</a>
@@ -90,30 +89,30 @@
 
             <div id="right" class="bor">
                 <form name="form1" action="#" method="post">
+                    <input type="hidden" id="bankCode" name="bankCode" value="">
                     <div class="p40 pt20">
-                        <h2 class="title"><span>划出-转出到银行</span></h2>
-                        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="tab mt20">
-                            <tbody>
-                                <tr>
-                                    <th>账号</th>
-                                    <th>开户行</th>
-                                </tr>
-                                <tr>
-                                    <td><label><input type="radio" name="bank" /><span class="pl10">62222222222222222</span></label></td>
-                                    <td>中国农业银行</td>
-                                </tr>
-                                <tr>
-                                    <td><label><input type="radio" name="bank" /><span class="pl10">63333333333333333</span></label></td>
-                                    <td>中国工商银行</td>
-                                </tr>
-                            </tbody>
-                        </table> 
-                        <div class="tac mt20 hidden">您还未设置默认银行账号，不能使用快捷充值。</div>
-                        <div class="tac mt20">
-                            <input onclick="" type="button" value="快捷转出"><span class="pl10"><a id="depositUrl" href="#" target="_blank" style="display: none;"><span id="spandepositUrl">快捷转出</span></a>快捷转出，收费标准，及转出限额请参照《快捷转出说明》</span>
-                        </div>
-                        <div class="tac">
-                            <input onclick="" type="button" value="网银转出"><span class="pl10"><a id="depositUrl" href="#" target="_blank" style="display: none;"><span id="spandepositUrl">网银转出</span></a>网银转出，收费标准，及转出限额请参照《网银转出说明》</span>
+                        <h2 class="title">
+                            <span>身份认证</span>
+                        </h2>
+                        <div class="certify mt20">
+                            <form action="">
+                                <div class="file-upload">
+                                  <div class="file-select">
+                                    <div class="file-select-button" id="fileName">身份证正面</div>
+                                    <div class="file-select-name" id="noFile">请点击上传文件...</div> 
+                                    <input type="file" name="chooseFile" id="chooseFile">
+                                  </div>
+                                </div>
+                                <div class="file-upload mt10">
+                                  <div class="file-select">
+                                    <div class="file-select-button" id="fileName">身份证反面</div>
+                                    <div class="file-select-name" id="noFile">请点击上传文件...</div> 
+                                    <input type="file" name="chooseFile" id="chooseFile">
+                                  </div>
+                                </div>
+
+                                <input type="submit" value="提交" class="png btn fl mt50" />
+                            </form>
                         </div>
                         <div class="errors"><span id="EEE"></span> </div>
                     </div>
