@@ -1403,6 +1403,19 @@ input[type="submit"].btn {
   height: auto;
   line-height: auto;
 }
+.max100 {
+  max-width: 100%;
+}
+.lhn * {
+  line-height: 1.5em;
+}
+.lhn td {
+  line-height: 1.5em !important;
+  padding: 12px 3px;
+}
+.lhn th {
+  line-height: 3em;
+}
 /* col */
 .col-3,
 .col-7 {
@@ -1475,6 +1488,16 @@ label {
           transform: translate(-50%, -50%);
   content: ' ';
   z-index: -1;
+}
+.state .on {
+  color: #fff;
+  border-radius: 20px;
+  background-color: #21aeef;
+  padding: 0 12px;
+}
+.state a {
+  display: inline-block;
+  margin-right: 24px;
 }
 .hidden {
   display: none;

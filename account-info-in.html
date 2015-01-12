@@ -1,0 +1,294 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="keywords" content="川商贷">
+        <meta http-equiv="description" content="川商贷">
+        <title>账户管理-金仓贷</title>
+
+        <link href="css/public.css" type="text/css" rel="stylesheet" />
+        <link href="css/style.css" type="text/css" rel="stylesheet" />
+
+        <!--[if IE 6]>
+<script type="text/javascript" src="js/DD_belatedPNG.js" ></script>
+<script type="text/javascript">   DD_belatedPNG.fix('.png,.logo');   </script>
+<![endif]-->
+        <script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
+        <script type="text/javascript" src="js/base.js"></script>
+
+    </head>
+
+    <body>
+
+        <div class="top">
+            <div class="w1100 mc">
+                <div class="fl">欢迎使用金仓贷！</div>
+                <div class="fr topr"><span>您好，月亮 <a href="#">[安全退出]</a></span><a href="#" class="borl pl20">您有（1）条未读消息</a><a href="#" class="borl pl20">我的账户</a><a href="#" class="borl pl20">充值</a></div>
+            </div>
+        </div>
+
+        <div class="header">
+            <div class="w1100 mc">
+                <a href="index.html" class="logo"><img src="images/logo.png" /></a>
+                <ul class="nav">
+                    <li>
+                        <a href="index.html">首页</a>
+                    </li>
+                    <li>
+                        <a href="loan.html">我要融资</a>
+                    </li>
+                    <li class="sub">
+                        <a href="invest.html">我要投资</a>
+                        <ul>
+                            <li><a href="invest.html">散标投资</a></li>
+                            <li><a href="transfer.html">债权转让</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="account.html" class="c900">账户管理</a>
+                    </li>
+                    <li>
+                        <a href="security.html">安全保障</a>
+                    </li>
+                    <li class="sub">
+                        <a href="company-intro.html">关于我们</a>
+                        <ul>
+                            <li><a href="company-intro.html">公司介绍</a></li>
+                            <li><a href="product-intro.html">产品介绍</a></li>
+                            <li><a href="qualification.html">企业资质</a></li>
+                            <li><a href="contact-us.html">联系我们</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="con clearfix">
+
+            <div id="left" class="bor">
+                <h2 class="mt20 pl20 borb2 lh48">账户管理</h2>
+                <ul id="subMenu" class="left_ul">
+                    <li>
+                        <a href="account.html">我的账户</a><i class="png"></i>
+                        <ol class="pb20 pt5">
+                            <li><a href="account-bank-to.html">从银行划入</a></li>
+                            <li><a href="account-to-bank.html">转出到银行</a></li>
+                            <li><a href="account-info-in.html" class="c900">充值记录查询</a></li>
+                            <li><a href="account-info-out.html">提现记录查询</a></li>
+                            <li><a href="account-invitation.html">我的邀请</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="account-invest.html">投资查询</a><i class="png"></i>
+                        <ol class="pb20 pt5">
+                            <li><a href="account-income-info.html">收益查询</a></li>
+                            <li><a href="account-trade-info.html">交易查询</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="account-fund.html">融资项目管理</a><i class="png"></i>
+                        <ol class="pb20 pt5">
+                            <li><a href="account-fund-apply.html">融资项目申请</a></li>
+                            <li><a href="account-fund-out.html">融资款提取</a></li>
+                            <li><a href="account-fund-in.html">融资项目还款</a></li>
+                        </ol>
+                    </li>
+                    <li><a href="account-safe.html">安全中心</a></li>
+                    <li><a href="account-message.html">消息中心</a></li>
+                </ul>
+            </div> 
+
+            <div id="right" class="bor">
+                <div class="p40 pt20">
+                    <h2 class="title"><span>充值记录列表</span></h2>
+                    <div class="clearfix pt20 pb20">
+                        <div class="fl lh36 mr20"><label class="fl">起止日期：</label>
+
+                            <input name="BeginDates" id="BeginDates" type="text" value="" maxlength="10" size="16" dateformatstring="yyyy-MM-dd" autocomplete="off" onfocus="new Calendar().show(this);">
+                            -
+                            <input name="EndDates" id="EndDates" type="text" value="" maxlength="10" size="16" dateformatstring="yyyy-MM-dd" autocomplete="off" onfocus="new Calendar().show(this);">
+                        </div>
+                        <a class="png btn fl mt5" href="#" onclick="transferInQry(this)"><span class="png">查询</span></a>
+                    </div>     
+                    <div class="tac bgf8 lh36 borb2">
+
+                    </div><table width="100%" border="0" cellspacing="0" cellpadding="0" class="tab mt20">
+
+                    <tbody><tr>
+                        <th class="pl15">充值流水号</th>
+                        <th>充值账号</th>
+                        <th>充值金额</th>
+                        <th>手续费</th>
+                        <th>充值总金额</th>
+                        <th>充值状态</th>
+                        <th>备注</th>
+                        <th>交易时间</th>
+                        </tr>
+                        <tr class="trValue">
+                            <td nowrap="" class="tdValue">
+                                <a href="DepositDetailQry.do?_locale=zh_CN&amp;BankId=1001&amp;LoginType=C&amp;depositId=20150106510059121383&amp;currPage=">20150106510059121383</a>
+                            </td>
+                            <td nowrap="" class="tdValue">20141217010000097819</td>
+                            <td nowrap="" class="tdValue">100.00</td>
+                            <td nowrap="" class="tdValue">0.00</td>
+                            <td nowrap="" class="tdValue">100.00</td>
+                            <td nowrap="" class="tdValue">SUCCESS</td>
+                            <td nowrap="" class="tdValue">充值成功!</td>
+                            <td nowrap="" class="tdValue">2015-01-06 15:22:49</td>
+                        </tr>
+
+                        <tr class="trValue">
+                            <td nowrap="" class="tdValue">
+                                <a href="DepositDetailQry.do?_locale=zh_CN&amp;BankId=1001&amp;LoginType=C&amp;depositId=&amp;currPage="></a>
+                            </td>
+                            <td nowrap="" class="tdValue">20141217010000097819</td>
+                            <td nowrap="" class="tdValue"></td>
+                            <td nowrap="" class="tdValue"></td>
+                            <td nowrap="" class="tdValue"></td>
+                            <td nowrap="" class="tdValue">ING</td>
+                            <td nowrap="" class="tdValue">充值申请中!</td>
+                            <td nowrap="" class="tdValue">2015-01-06 15:22:03</td>
+                        </tr>
+
+                        <tr class="trValue">
+                            <td nowrap="" class="tdValue">
+                                <a href="DepositDetailQry.do?_locale=zh_CN&amp;BankId=1001&amp;LoginType=C&amp;depositId=20150105510059114906&amp;currPage=">20150105510059114906</a>
+                            </td>
+                            <td nowrap="" class="tdValue">20141217010000097819</td>
+                            <td nowrap="" class="tdValue">100.00</td>
+                            <td nowrap="" class="tdValue">0.00</td>
+                            <td nowrap="" class="tdValue">100.00</td>
+                            <td nowrap="" class="tdValue">SUCCESS</td>
+                            <td nowrap="" class="tdValue">充值成功!</td>
+                            <td nowrap="" class="tdValue">2015-01-05 18:11:28</td>
+                        </tr>
+
+                        <tr class="trValue">
+                            <td nowrap="" class="tdValue">
+                                <a href="DepositDetailQry.do?_locale=zh_CN&amp;BankId=1001&amp;LoginType=C&amp;depositId=20150105510059114844&amp;currPage=">20150105510059114844</a>
+                            </td>
+                            <td nowrap="" class="tdValue">20141217010000097819</td>
+                            <td nowrap="" class="tdValue">100.00</td>
+                            <td nowrap="" class="tdValue">0.00</td>
+                            <td nowrap="" class="tdValue">100.00</td>
+                            <td nowrap="" class="tdValue">SUCCESS</td>
+                            <td nowrap="" class="tdValue">充值成功!</td>
+                            <td nowrap="" class="tdValue">2015-01-05 17:59:20</td>
+                        </tr>
+
+                        <tr class="trValue">
+                            <td nowrap="" class="tdValue">
+                                <a href="DepositDetailQry.do?_locale=zh_CN&amp;BankId=1001&amp;LoginType=C&amp;depositId=20150105510059114852&amp;currPage=">20150105510059114852</a>
+                            </td>
+                            <td nowrap="" class="tdValue">20141217010000097819</td>
+                            <td nowrap="" class="tdValue">100.00</td>
+                            <td nowrap="" class="tdValue">0.00</td>
+                            <td nowrap="" class="tdValue">100.00</td>
+                            <td nowrap="" class="tdValue">SUCCESS</td>
+                            <td nowrap="" class="tdValue">充值成功!</td>
+                            <td nowrap="" class="tdValue">2015-01-05 17:54:03</td>
+                        </tr>
+
+                        <tr class="trValue">
+                            <td nowrap="" class="tdValue">
+                                <a href="DepositDetailQry.do?_locale=zh_CN&amp;BankId=1001&amp;LoginType=C&amp;depositId=20150105510059114782&amp;currPage=">20150105510059114782</a>
+                            </td>
+                            <td nowrap="" class="tdValue">20141217010000097819</td>
+                            <td nowrap="" class="tdValue">100.00</td>
+                            <td nowrap="" class="tdValue">0.00</td>
+                            <td nowrap="" class="tdValue">100.00</td>
+                            <td nowrap="" class="tdValue">SUCCESS</td>
+                            <td nowrap="" class="tdValue">充值成功!</td>
+                            <td nowrap="" class="tdValue">2015-01-05 17:48:25</td>
+                        </tr>
+
+                        <tr class="trValue">
+                            <td nowrap="" class="tdValue">
+                                <a href="DepositDetailQry.do?_locale=zh_CN&amp;BankId=1001&amp;LoginType=C&amp;depositId=20150105510059114769&amp;currPage=">20150105510059114769</a>
+                            </td>
+                            <td nowrap="" class="tdValue">20141217010000097819</td>
+                            <td nowrap="" class="tdValue">100.00</td>
+                            <td nowrap="" class="tdValue">0.00</td>
+                            <td nowrap="" class="tdValue">100.00</td>
+                            <td nowrap="" class="tdValue">SUCCESS</td>
+                            <td nowrap="" class="tdValue">充值成功!</td>
+                            <td nowrap="" class="tdValue">2015-01-05 17:46:47</td>
+                        </tr>
+
+                        <tr class="trValue">
+                            <td nowrap="" class="tdValue">
+                                <a href="DepositDetailQry.do?_locale=zh_CN&amp;BankId=1001&amp;LoginType=C&amp;depositId=20150105510059114730&amp;currPage=">20150105510059114730</a>
+                            </td>
+                            <td nowrap="" class="tdValue">20141217010000097819</td>
+                            <td nowrap="" class="tdValue">100.00</td>
+                            <td nowrap="" class="tdValue">0.00</td>
+                            <td nowrap="" class="tdValue">100.00</td>
+                            <td nowrap="" class="tdValue">SUCCESS</td>
+                            <td nowrap="" class="tdValue">充值成功!</td>
+                            <td nowrap="" class="tdValue">2015-01-05 17:40:50</td>
+                        </tr>
+
+                        <tr class="trValue">
+                            <td nowrap="" class="tdValue">
+                                <a href="DepositDetailQry.do?_locale=zh_CN&amp;BankId=1001&amp;LoginType=C&amp;depositId=20150105510059114640&amp;currPage=">20150105510059114640</a>
+                            </td>
+                            <td nowrap="" class="tdValue">20141217010000097819</td>
+                            <td nowrap="" class="tdValue">100.00</td>
+                            <td nowrap="" class="tdValue">0.00</td>
+                            <td nowrap="" class="tdValue">100.00</td>
+                            <td nowrap="" class="tdValue">SUCCESS</td>
+                            <td nowrap="" class="tdValue">充值成功!</td>
+                            <td nowrap="" class="tdValue">2015-01-05 17:22:22</td>
+                        </tr>
+
+                        <tr class="trValue">
+                            <td nowrap="" class="tdValue">
+                                <a href="DepositDetailQry.do?_locale=zh_CN&amp;BankId=1001&amp;LoginType=C&amp;depositId=20150105510059114579&amp;currPage=">20150105510059114579</a>
+                            </td>
+                            <td nowrap="" class="tdValue">20141217010000097819</td>
+                            <td nowrap="" class="tdValue">100.00</td>
+                            <td nowrap="" class="tdValue">0.00</td>
+                            <td nowrap="" class="tdValue">100.00</td>
+                            <td nowrap="" class="tdValue">SUCCESS</td>
+                            <td nowrap="" class="tdValue">充值成功!</td>
+                            <td nowrap="" class="tdValue">2015-01-05 17:12:28</td>
+                        </tr>
+
+
+                    </tbody></table>
+                    <div class="tabpages mt10 tar c999">
+                        <input type="hidden" name="_viewReferer" value="p/account/myaccount/depositQueryList">    
+                        <span>当前第页&nbsp;共5页&nbsp;共条记录</span>
+                        <a href="#" onclick="queryList(1)">首页</a> &nbsp;
+                        <a href="#" onclick="queryList(-1,'pre')">上一页</a> &nbsp; 
+                        <a href="#" onclick="queryList(1,'next')">下一页</a> &nbsp;
+                        <a href="#" onclick="queryList(5)">尾页</a> &nbsp;
+
+                    </div>
+                    <div class="errors">            
+                        <span id="EEE"></span>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+        <div class="footer">
+            <div style="width:1000px; margin:0 auto">
+                <div style="width:80%" class="tal fl">
+                    <dl class="friends clearfix"><dt>友情链接</dt><dd><a href="#">华夏川商借款担保</a><a href="#">华夏川商建设</a><a href="#">华夏川商联合投资控股</a></dd></dl>
+                </div>
+                <div style="width:20%" class="tar fl">
+                    <img src="images/test-qrcode.jpg" style="width:100px;">
+                </div>
+                <div class="tac p20">版权所有 © 重庆骐特·金仓贷 渝ICP备00000000号</div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+
+    </body>
+</html>

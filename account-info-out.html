@@ -4,7 +4,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta http-equiv="keywords" content="川商贷">
         <meta http-equiv="description" content="川商贷">
-        <title>投资查询-金仓贷</title>
+        <title>账户管理-金仓贷</title>
 
         <link href="css/public.css" type="text/css" rel="stylesheet" />
         <link href="css/style.css" type="text/css" rel="stylesheet" />
@@ -75,12 +75,12 @@
                             <li><a href="account-bank-to.html">从银行划入</a></li>
                             <li><a href="account-to-bank.html">转出到银行</a></li>
                             <li><a href="account-info-in.html">充值记录查询</a></li>
-                            <li><a href="account-info-out.html">提现记录查询</a></li>
+                            <li><a href="account-info-out.html" class="c900">提现记录查询</a></li>
                             <li><a href="account-invitation.html">我的邀请</a></li>
                         </ol>
                     </li>
                     <li>
-                        <a href="account-invest.html" class="c900">投资查询</a><i class="png"></i>
+                        <a href="account-invest.html">投资查询</a><i class="png"></i>
                         <ol class="pb20 pt5">
                             <li><a href="account-income-info.html">收益查询</a></li>
                             <li><a href="account-trade-info.html">交易查询</a></li>
@@ -101,74 +101,89 @@
 
             <div id="right" class="bor">
                 <div class="p40 pt20">
+                    <h2 class="title"><span>提现记录列表</span></h2>
+                    <div class="tac bgf8 lh36 borb2">
 
-                    <ul class="tradetab">
-                        <li class="act"><a href="#">投资记录</a></li>
-                    </ul>
+                    </div><table width="100%" border="0" cellspacing="0" cellpadding="0" class="tab mt20">
 
-                    <div class="tradecon">
-
-                        <div class="clearfix pt20 pb20 borb2">
-                            <div class="fl lh20  mr20"><label class="fl">起止日期：</label>		
-                                <input name="BeginDates" id="BeginDates" type="text" value="" size="20" dateformatstring="yyyy-MM-dd" autocomplete="off" onfocus="new Calendar().show(this);">
-                                -
-                                <input name="EndDates" id="EndDates" type="text" value="" size="20" dateformatstring="yyyy-MM-dd" autocomplete="off" onfocus="new Calendar().show(this);">
-                            </div>
-                            <div class="fl lh20 query_time">
-                                <dl><dt></dt><dd>
-                                    <a key="1" name="term">今天</a>
-                                    <a key="2" name="term">最近七天</a>
-                                    <a key="3" name="term">1个月</a>
-                                    <a key="4" name="term">3个月</a>
-                                    <a key="5" name="term">1年</a>
-                                    </dd></dl>
-                            </div>
-                            <div class="fl lh20  mr20"><br><br></div>
-                            <div class="fl lh20  mr20"><label>金额范围：</label><input name="amountBegin" type="text" value="" size="20">
-                                -
-                                <input name="amountEnd" type="text" value="" size="20"> 元</div>
-                            <a class="png btn fl mr20" href="#" onclick="doIt()"><span class="png">查询</span></a>
-                        </div>
-                        <div class="row state mt20 mb5">
-                            <div class="col-xs-9">
-                                <div class="row">
-                                    <div class="col-xs-2">交易状态：</div>
-                                    <div class="col-xs-10">
-                                        <a key="" name="status" class="on">所有投资</a>
-                                        <a key="1" name="status">待成立投资</a>
-                                        <a key="2" name="status">未到期投资</a>
-                                        <a key="3" name="status">正常收款的投资</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="tac bgf8 lh36 borb2">
-
-                        </div><table width="100%" border="0" cellspacing="0" cellpadding="0" class="tab2 mt5">
-                        <tbody><tr>
-                            <th class="pl15">项目编号</th>
-                            <th>项目名称</th>
-                            <th>借款金额</th>
-                            <th>投资金额</th>
-                            <th>投资时间</th>
-
-                            <th></th>
-                            </tr>
+                    <tbody><tr>
+                        <!--              <th class="pl15">支付流水</th> -->
+                        <!--              <th>充值账号</th> -->
+                        <!--              <th>充值帐户名</th> -->
+                        <th class="pl15">银行名称</th>
+                        <th>银行账号</th>
+                        <th>提现金额</th>
+                        <th>手续费</th>
+                        <th>提现总金额</th>
+                        <th>提现后余额</th>
+                        <th>状态</th>
+                        <th>备注</th>
+                        <th>交易时间</th>
+                        </tr>
+                        <tr class="trValue">
 
 
-                        </tbody></table>
 
-                        <div class="tabpages mt10 tar c999">
-                            <input type="hidden" name="_viewReferer" value="p/account/transqry/PInvestmentRecordPre">    	
-                            <span>当前第0页&nbsp;共0页&nbsp;0条记录</span>
-                            <a href="####" disabled="">首页</a> &nbsp;
-                            <a href="####" disabled="">上一页</a> &nbsp; 
-                            <a href="####" disabled="">下一页</a> &nbsp;
-                            <a href="####" disabled="">尾页</a> &nbsp; 	  	
-                        </div>
+                            <td nowrap="" class="tdValue">ICBC</td>
+                            <td nowrap="" class="tdValue">6222021001116245702</td>
+                            <td nowrap="" class="tdValue">300.00</td>
+                            <td nowrap="" class="tdValue">5.00</td>
+                            <td nowrap="" class="tdValue">295.00</td>
+                            <td nowrap="" class="tdValue"></td>
+                            <td nowrap="" class="tdValue">
+                                处理成功
+                            </td>
+                            <td nowrap="" class="tdValue">提现成功!</td>
+                            <td nowrap="" class="tdValue">2015-01-04 16:03:22</td>
+                        </tr>
+
+                        <tr class="trValue">
+
+
+
+                            <td nowrap="" class="tdValue">ICBC</td>
+                            <td nowrap="" class="tdValue">6222021001116245702</td>
+                            <td nowrap="" class="tdValue">50.00</td>
+                            <td nowrap="" class="tdValue">5.00</td>
+                            <td nowrap="" class="tdValue">45.00</td>
+                            <td nowrap="" class="tdValue"></td>
+                            <td nowrap="" class="tdValue">
+                                处理成功
+                            </td>
+                            <td nowrap="" class="tdValue">提现成功!</td>
+                            <td nowrap="" class="tdValue">2014-12-29 16:28:49</td>
+                        </tr>
+
+                        <tr class="trValue">
+
+
+
+                            <td nowrap="" class="tdValue">ICBC</td>
+                            <td nowrap="" class="tdValue">6222021001116245702</td>
+                            <td nowrap="" class="tdValue">100.00</td>
+                            <td nowrap="" class="tdValue">5.00</td>
+                            <td nowrap="" class="tdValue">95.00</td>
+                            <td nowrap="" class="tdValue"></td>
+                            <td nowrap="" class="tdValue">
+                                处理成功
+                            </td>
+                            <td nowrap="" class="tdValue">提现成功!</td>
+                            <td nowrap="" class="tdValue">2014-12-29 16:28:24</td>
+                        </tr>
+
+
+                    </tbody></table>
+                    <div class="tabpages mt10 tar c999">
+                        <input type="hidden" name="_viewReferer" value="p/account/myaccount/withDrawQueryList">    
+                        <span>当前第页&nbsp;共1页&nbsp;共条记录</span>
+                        <a href="#" onclick="queryList(1)">首页</a> &nbsp;
+                        <a href="#" onclick="queryList(-1,'pre')">上一页</a> &nbsp; 
+                        <a href="#" onclick="queryList(1,'next')">下一页</a> &nbsp;
+                        <a href="#" onclick="queryList(1)">尾页</a> &nbsp;
                     </div>
-                    <div style="color:#F00"><span id="EEE"></span></div>
+                    <div class="errors">            
+                        <span id="EEE"></span>
+                    </div>
                 </div>
             </div>
 
@@ -180,7 +195,7 @@
         <div class="footer">
             <div style="width:1000px; margin:0 auto">
                 <div style="width:80%" class="tal fl">
-                    <dl class="friends clearfix"><dt>友情链接</dt><dd><a href="#">华夏川商融资担保</a><a href="#">华夏川商建设</a><a href="#">华夏川商联合投资控股</a></dd></dl>
+                    <dl class="friends clearfix"><dt>友情链接</dt><dd><a href="#">华夏川商借款担保</a><a href="#">华夏川商建设</a><a href="#">华夏川商联合投资控股</a></dd></dl>
                 </div>
                 <div style="width:20%" class="tar fl">
                     <img src="images/test-qrcode.jpg" style="width:100px;">
