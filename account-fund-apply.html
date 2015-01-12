@@ -4,7 +4,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta http-equiv="keywords" content="川商贷">
         <meta http-equiv="description" content="川商贷">
-        <title>从银行划入-金仓贷</title>
+        <title>融资项目申请-川商贷</title>
 
         <link href="css/public.css" type="text/css" rel="stylesheet" />
         <link href="css/style.css" type="text/css" rel="stylesheet" />
@@ -21,8 +21,8 @@
     <body>
 
         <div class="top">
-            <div class="w1100 mc">
-                <div class="fl">欢迎使用金仓贷！</div>
+            <div class="w1000 mc">
+                <div class="fl">欢迎使用川商贷！</div>
                 <div class="fr topr"><span>您好，月亮 <a href="#">[安全退出]</a></span><a href="#" class="borl pl20">您有（1）条未读消息</a><a href="#" class="borl pl20">我的账户</a><a href="#" class="borl pl20">充值</a></div>
             </div>
         </div>
@@ -72,7 +72,7 @@
                     <li>
                         <a href="account.html">我的账户</a><i class="png"></i>
                         <ol class="pb20 pt5">
-                            <li><a href="account-bank-to.html" class="c900">从银行划入</a></li>
+                            <li><a href="account-bank-to.html">从银行划入</a></li>
                             <li><a href="account-to-bank.html">转出到银行</a></li>
                             <li><a href="account-info-in.html">充值记录查询</a></li>
                             <li><a href="account-info-out.html">提现记录查询</a></li>
@@ -89,7 +89,7 @@
                     <li>
                         <a href="account-fund.html">融资项目管理</a><i class="png"></i>
                         <ol class="pb20 pt5">
-                            <li><a href="account-fund-apply.html">融资项目申请</a></li>
+                            <li><a href="account-fund-apply.html" class="c900">融资项目申请</a></li>
                             <li><a href="account-fund-out.html">融资款提取</a></li>
                             <li><a href="account-fund-in.html">融资项目还款</a></li>
                         </ol>
@@ -100,50 +100,38 @@
             </div> 
 
             <div id="right" class="bor">
-                <form name="form1" action="#" method="post">
-                    <input type="hidden" id="bankCode" name="bankCode" value="">
-                    <div class="p40 pt20">
-                        <h2 class="title"><span>从银行划入</span></h2>
-                        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="tab mt20">
-                            <tbody>
-                                <tr>
-                                    <th>账号</th>
-                                    <th>开户行</th>
-                                </tr>
-                                <tr>
-                                    <td><label><input type="radio" name="bank" /><span class="pl10">62222222222222222</span></label></td>
-                                    <td>中国农业银行</td>
-                                </tr>
-                                <tr>
-                                    <td><label><input type="radio" name="bank" /><span class="pl10">63333333333333333</span></label></td>
-                                    <td>中国工商银行</td>
-                                </tr>
-                            </tbody>
-                        </table> 
-                        <div class="tac mt20 hidden">您还未设置默认银行账号，不能使用快捷充值。</div>
-                        <div class="tac mt20">
-                            <input onclick="" type="button" value="快捷充值"><span class="pl10"><a id="depositUrl" href="#" target="_blank" style="display: none;"><span id="spandepositUrl">快捷充值</span></a>快捷充值，收费标准，及充值限额请参照《快捷充值说明》</span>
-                        </div>
-                        <div class="tac">
-                            <input onclick="" type="button" value="网银充值"><span class="pl10"><a id="depositUrl" href="#" target="_blank" style="display: none;"><span id="spandepositUrl">网银充值</span></a>网银充值，收费标准，及充值限额请参照《网银充值说明》</span>
-                        </div>
-                        <div class="errors"><span id="EEE"></span> </div>
-                    </div>
-                </form>
+                <div class="p40 pt20">
+
+                    <h2 class="title"><span>融资项目申请</span></h2>
+
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="tab mt20">
+                        <tr>
+                            <td width="15%" class="bgf0">申请人姓名：</td>
+                            <td width="35%"><input name="" type="text" class="text w200"/></td>
+                            <td width="15%" class="bgf0">申请人性别:</td>
+                            <td width="35%"><input name="" type="radio" value="" checked="checked" class="radio" />男<input name="" type="radio" value="" class="radio ml10" />女</td>
+                        </tr>
+                        <tr>
+                            <td class="bgf0">还款方式：</td>
+                            <td><select name="" class="select" style="width:208px;"><option>分期等额本息</option><option>分期等额本息</option></select></td>
+                            <td class="bgf0">申请时间:</td>
+                            <td><div class="query_qzsj" ><span class="c999 ml5">2014-07-16</span><i class="png"></i></div></td>
+                        </tr>
+                    </table>
+                    <div class="tac mt20"><a class="png btn3"><span class="png btn3">立即申请</span></a></div>
+
+
+                </div>
             </div>
+
+
         </div>
 
+
+
         <div class="footer">
-            <div style="width:1000px; margin:0 auto">
-                <div style="width:80%" class="tal fl">
-                    <dl class="friends clearfix"><dt>友情链接</dt><dd><a href="#">华夏川商借款担保</a><a href="#">华夏川商建设</a><a href="#">华夏川商联合投资控股</a></dd></dl>
-                </div>
-                <div style="width:20%" class="tar fl">
-                    <img src="images/test-qrcode.jpg" style="width:100px;">
-                </div>
-                <div class="tac p20">版权所有 © 重庆骐特·金仓贷 渝ICP备00000000号</div>
-                <div class="clearfix"></div>
-            </div>
+            <dl class="friends clearfix"><dt>友情链接</dt><dd><a href="#">华夏川商借款担保</a><a href="#">华夏川商建设</a><a href="#">华夏川商联合投资控股</a></dd></dl>
+            <div class="tac p20">版权所有 © 川商贷 未经许可不得复制、转载或摘编，违者必究! &nbsp;&nbsp; 渝ICP备00000000号</div>
         </div>
 
     </body>

@@ -4,7 +4,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta http-equiv="keywords" content="川商贷">
         <meta http-equiv="description" content="川商贷">
-        <title>从银行划入-金仓贷</title>
+        <title>融资项目管理-金仓贷</title>
 
         <link href="css/public.css" type="text/css" rel="stylesheet" />
         <link href="css/style.css" type="text/css" rel="stylesheet" />
@@ -72,7 +72,7 @@
                     <li>
                         <a href="account.html">我的账户</a><i class="png"></i>
                         <ol class="pb20 pt5">
-                            <li><a href="account-bank-to.html" class="c900">从银行划入</a></li>
+                            <li><a href="account-bank-to.html">从银行划入</a></li>
                             <li><a href="account-to-bank.html">转出到银行</a></li>
                             <li><a href="account-info-in.html">充值记录查询</a></li>
                             <li><a href="account-info-out.html">提现记录查询</a></li>
@@ -87,7 +87,7 @@
                         </ol>
                     </li>
                     <li>
-                        <a href="account-fund.html">融资项目管理</a><i class="png"></i>
+                        <a href="account-fund.html" class="c900">融资项目管理</a><i class="png"></i>
                         <ol class="pb20 pt5">
                             <li><a href="account-fund-apply.html">融资项目申请</a></li>
                             <li><a href="account-fund-out.html">融资款提取</a></li>
@@ -100,38 +100,35 @@
             </div> 
 
             <div id="right" class="bor">
-                <form name="form1" action="#" method="post">
-                    <input type="hidden" id="bankCode" name="bankCode" value="">
-                    <div class="p40 pt20">
-                        <h2 class="title"><span>从银行划入</span></h2>
-                        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="tab mt20">
-                            <tbody>
-                                <tr>
-                                    <th>账号</th>
-                                    <th>开户行</th>
-                                </tr>
-                                <tr>
-                                    <td><label><input type="radio" name="bank" /><span class="pl10">62222222222222222</span></label></td>
-                                    <td>中国农业银行</td>
-                                </tr>
-                                <tr>
-                                    <td><label><input type="radio" name="bank" /><span class="pl10">63333333333333333</span></label></td>
-                                    <td>中国工商银行</td>
-                                </tr>
-                            </tbody>
-                        </table> 
-                        <div class="tac mt20 hidden">您还未设置默认银行账号，不能使用快捷充值。</div>
-                        <div class="tac mt20">
-                            <input onclick="" type="button" value="快捷充值"><span class="pl10"><a id="depositUrl" href="#" target="_blank" style="display: none;"><span id="spandepositUrl">快捷充值</span></a>快捷充值，收费标准，及充值限额请参照《快捷充值说明》</span>
-                        </div>
-                        <div class="tac">
-                            <input onclick="" type="button" value="网银充值"><span class="pl10"><a id="depositUrl" href="#" target="_blank" style="display: none;"><span id="spandepositUrl">网银充值</span></a>网银充值，收费标准，及充值限额请参照《网银充值说明》</span>
-                        </div>
-                        <div class="errors"><span id="EEE"></span> </div>
-                    </div>
-                </form>
+                <div class="p40 pt20">
+
+                    <h2 class="title"><span>借款项目管理</span><a href="account-rzxmsq.html"  class="fr c900 ft18" >立即申请借款</a></h2>
+                    <dl class="sxdl2 clearfix mt20"><dt>交易状态：</dt><dd class="clearfix"><a class="on">所有借款</a><a>审核中的借款</a><a>到期的借款</a><a>正常还款的借款</a></dd></dl>
+
+                    <div class="ft14 mt10">个人总借款金额:<span class="ce80">￥0.00</span>元</div>
+
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="tab2 mt10">
+                        <tr>
+                            <th class="pl15">借款流水号 </th>
+                            <th>名称</th>
+                            <th>借款时间</th>
+                            <th>到期时间</th>
+                            <th>交易金额（元）</th>
+                            <th>交易状态</th>
+                            <th>操作</th>
+                        </tr>
+                    </table>
+                    <div class="tac bgf8 lh36 borb2">暂时没有借款记录</div>
+
+                    <div class="tabpages mt10 tar c999"><span class="fr" style="margin-top:3px;"><input name="" type="text"  class="text fl c999"/><a class="go fl pr5">GO</a></span><span class="mr20">共 0 条记录 0 页</span>|<a class="ml20 c999">首页</a><a class="ml20 c999">上一页</a><a class="ml20 c999">下一页</a><a class="ml20 mr20 c999">尾页</a></div>
+
+                </div>
             </div>
+
+
         </div>
+
+
 
         <div class="footer">
             <div style="width:1000px; margin:0 auto">

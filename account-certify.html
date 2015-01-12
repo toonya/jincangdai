@@ -69,20 +69,32 @@
             <div id="left" class="bor">
                 <h2 class="mt20 pl20 borb2 lh48">账户管理</h2>
                 <ul id="subMenu" class="left_ul">
-                    <li><a href="account.html" class="c900">我的账户</a><i class="png"></i>
+                    <li>
+                        <a href="account.html">我的账户</a><i class="png"></i>
                         <ol class="pb20 pt5">
-                            <li><a href="account-bank-to.html">划入</a></li>
-                            <li><a href="account-to-bank.html">划出</a></li>
-                            <li><a href="account-info.html">账户资料</a></li>
+                            <li><a href="account-bank-to.html">从银行划入</a></li>
+                            <li><a href="account-to-bank.html">转出到银行</a></li>
+                            <li><a href="account-info-in.html">充值记录查询</a></li>
+                            <li><a href="account-info-out.html">提现记录查询</a></li>
+                            <li><a href="account-invitation.html">我的邀请</a></li>
                         </ol>
                     </li>
-                    <li><a href="account-rzxmgl.html">借款项目管理</a>
-                        <ol class="pb20 pt5 hide">
-                            <li><a href="account-rzxmsq.html" class="c900">借款项目申请</a><i class="png"></i></li>
+                    <li>
+                        <a href="account-invest.html">投资查询</a><i class="png"></i>
+                        <ol class="pb20 pt5">
+                            <li><a href="account-income-info.html">收益查询</a></li>
+                            <li><a href="account-trade-info.html">交易查询</a></li>
                         </ol>
                     </li>
-                    <li><a href="account-jycx.html">交易查询</a></li>
-                    <li><a href="account-safe.html">安全中心</a></li>
+                    <li>
+                        <a href="account-fund.html">融资项目管理</a><i class="png"></i>
+                        <ol class="pb20 pt5">
+                            <li><a href="account-fund-apply.html">融资项目申请</a></li>
+                            <li><a href="account-fund-out.html">融资款提取</a></li>
+                            <li><a href="account-fund-in.html">融资项目还款</a></li>
+                        </ol>
+                    </li>
+                    <li><a href="account-safe.html" class="c900">安全中心</a></li>
                     <li><a href="account-message.html">消息中心</a></li>
                 </ul>
             </div> 
@@ -97,18 +109,18 @@
                         <div class="certify mt20">
                             <form action="">
                                 <div class="file-upload">
-                                  <div class="file-select">
-                                    <div class="file-select-button" id="fileName">身份证正面</div>
-                                    <div class="file-select-name" id="noFile">请点击上传文件...</div> 
-                                    <input type="file" name="chooseFile" id="chooseFile">
-                                  </div>
+                                    <div class="file-select">
+                                        <div class="file-select-button" id="fileName">身份证正面</div>
+                                        <div class="file-select-name" id="noFile">请点击上传文件...</div> 
+                                        <input type="file" name="chooseFile" id="chooseFile">
+                                    </div>
                                 </div>
                                 <div class="file-upload mt10">
-                                  <div class="file-select">
-                                    <div class="file-select-button" id="fileName">身份证反面</div>
-                                    <div class="file-select-name" id="noFile">请点击上传文件...</div> 
-                                    <input type="file" name="chooseFile" id="chooseFile">
-                                  </div>
+                                    <div class="file-select">
+                                        <div class="file-select-button" id="fileName">身份证反面</div>
+                                        <div class="file-select-name" id="noFile">请点击上传文件...</div> 
+                                        <input type="file" name="chooseFile" id="chooseFile">
+                                    </div>
                                 </div>
 
                                 <input type="submit" value="提交" class="png btn fl mt50" />
