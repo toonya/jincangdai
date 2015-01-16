@@ -1386,15 +1386,11 @@ p.loan-apply-con {
     margin-left: 0%;
   }
 }
-.row * {
-  box-sizing: border-box;
-}
 .row::before,
 .row::after {
   content: ' ';
   display: table;
   clear: both;
-  box-sizing: border-box;
 }
 input[type="submit"].btn {
   border: none;
@@ -1420,31 +1416,27 @@ input[type="submit"].btn {
 .col-3,
 .col-7 {
   float: left;
-  box-sizing: border-box;
 }
 .clear-col {
   clear: both;
-}
-.col-7 {
-  width: 70%;
-}
-.col-6 {
-  width: 60%;
-}
-.col-4 {
-  width: 40%;
-}
-.col-3 {
-  width: 30%;
-}
-.col-7 .sxdl dd {
-  width: auto;
 }
 .shaixuan .col-7 {
   border-right: 1px solid #ddd;
 }
 .shaixuan .col-3 {
   padding: 0 30px;
+}
+.col-7 {
+  width: 658px;
+}
+.col-3 {
+  width: 219px;
+}
+.transfer-list {
+  width: 938px;
+}
+.col-7 .sxdl dd {
+  width: auto;
 }
 .shaixuan .col-3 a {
   display: block;
@@ -1604,7 +1596,7 @@ label {
   padding: 0 10px;
 }
 ul.nav li {
-  display: inline-block;
+  float: left;
   position: relative;
   z-index: 9999;
   font-size: 18px;
@@ -1625,19 +1617,16 @@ ul.nav li ul {
   width: auto;
   text-align: center;
 }
-ul.nav li ul::before {
-  content: ' ';
+ul.nav li ul .sub-nav-icon {
   position: absolute;
-  left: 50%;
-  top: 0;
-  border-left: 1px solid #cccccc;
-  border-top: 1px solid #cccccc;
-  background: #fff;
-  -webkit-transform: rotate(45deg) translate(-50%, -50%);
-      -ms-transform: rotate(45deg) translate(-50%, -50%);
-          transform: rotate(45deg) translate(-50%, -50%);
-  width: 8px;
-  height: 8px;
+  top: -5px;
+  left: 45%;
+}
+ul.nav li ul .sub-nav-icon span {
+  display: block;
+  background: url(../images/nav-sub-nav-icon-2.png);
+  width: 9px;
+  height: 5px;
 }
 ul.nav li ul a {
   padding: 0;
@@ -1650,6 +1639,7 @@ ul.nav li ul a:hover {
 }
 ul.nav li ul li {
   display: block;
+  float: none;
 }
 ul.nav li:hover > a {
   color: #fdb82c;
@@ -1663,13 +1653,13 @@ ul.nav li:hover::after {
 ul.nav .sub {
   padding-right: 3px;
 }
-ul.nav .sub::after {
-  content: ' ';
+.sub-icon {
+  display: block;
   position: absolute;
-  right: 7px;
-  top: 18px;
   width: 0;
   height: 0;
+  top: 18px;
+  right: 7px;
   border-left: 4px solid transparent;
   border-right: 4px solid transparent;
   border-top: 4px solid #555;
@@ -2103,12 +2093,18 @@ body#index-body div.con {
 .security-con p {
   text-indent: 2em;
 }
-.security-con h2.security-title-1, .security-con h2.security-title-2, .security-con h2.security-title-3, .security-con h2.security-title-4 {
+.security-con h2.security-title-1,
+.security-con h2.security-title-2,
+.security-con h2.security-title-3,
+.security-con h2.security-title-4 {
   position: relative;
-  height: 66px;    
+  height: 66px;
   left: -66px;
 }
-.security-con h2.security-title-1 span, .security-con h2.security-title-2 span, .security-con h2.security-title-3 span, .security-con h2.security-title-4 span {
+.security-con h2.security-title-1 span,
+.security-con h2.security-title-2 span,
+.security-con h2.security-title-3 span,
+.security-con h2.security-title-4 span {
   margin-top: 18px;
   display: inline-block;
   color: white;
@@ -2117,29 +2113,28 @@ body#index-body div.con {
   background: url(../images/security-titlebg-1.png) no-repeat scroll left 0;
 }
 .security-con h2.security-title-1 span {
-  padding: 0 50px 0 40px;    
+  padding: 0 50px 0 40px;
   background: #1bb8e2;
 }
 .security-con h2.security-title-2 {
   background: url(../images/security-titlebg-2.png) no-repeat scroll left 0;
 }
 .security-con h2.security-title-2 span {
-  padding: 0 50px 0 40px;    
+  padding: 0 50px 0 40px;
   background: #83c614;
-  
 }
 .security-con h2.security-title-3 {
-  background: url(../images/security-titlebg-3.png) no-repeat scroll left 0;  
+  background: url(../images/security-titlebg-3.png) no-repeat scroll left 0;
 }
 .security-con h2.security-title-3 span {
-  padding: 0 50px 0 40px;    
+  padding: 0 50px 0 40px;
   background: #ffc400;
 }
 .security-con h2.security-title-4 {
-  background: url(../images/security-titlebg-4.png) no-repeat scroll left 0;  
+  background: url(../images/security-titlebg-4.png) no-repeat scroll left 0;
 }
 .security-con h2.security-title-4 span {
-  padding: 0 50px 0 40px;    
+  padding: 0 50px 0 40px;
   background: #45b5a7;
 }
 .security-con div.security-content {

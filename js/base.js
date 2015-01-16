@@ -15,6 +15,18 @@ $(function(){
 			}
 		},100);
 	})
+
+	$(document).ready(function(){
+		if( $(window).width() < 1200 )
+			$('body').width(1200);
+	})
+
+	$( window ).resize(function() {
+	  if( $(window).width() < 1200 )
+			$('body').width(1200);
+	  else 
+	  	$('body').width('');
+	});
 	
 	//滑动效果在显示和隐藏状态之间切换
 	$("#subMenu li a").each(function(){

@@ -1,11 +1,10 @@
 @import 'origin.less';
 @import 'less/bootstrap.less';
-
 @c-border: #CCCCCC;
 @c-bg-y: #FDB82C;
 
 .row * {
-	box-sizing: border-box;
+	//box-sizing: border-box;
 }
 
 .row {
@@ -13,7 +12,7 @@
 		content: ' ';
 		display: table;
 		clear: both;
-		box-sizing: border-box;
+		//box-sizing: border-box;
 	}
 }
 
@@ -47,31 +46,11 @@ input[type="submit"].btn {
 /* col */
 .col-3, .col-7 {
 	float: left;
-	box-sizing: border-box;
+	//box-sizing: border-box;
 }
 
 .clear-col {
 	clear: both;
-}
-
-.col-7 {
-	width: 70%;
-}
-
-.col-6 {
-	width: 60%;
-}
-
-.col-4 {
-	width: 40%;
-}
-
-.col-3 {
-	width: 30%;
-}
-
-.col-7 .sxdl dd {
-	width: auto;
 }
 
 .shaixuan .col-7 {
@@ -80,6 +59,22 @@ input[type="submit"].btn {
 
 .shaixuan .col-3 {
 	padding: 0 30px;
+}
+
+.col-7 {
+  width: 658px;
+}
+
+.col-3 {
+  width: 219px;
+}
+
+.transfer-list {
+  width: 938px;
+}
+
+.col-7 .sxdl dd {
+  width: auto;
 }
 
 .shaixuan .col-3 a {
@@ -169,7 +164,7 @@ label {
 // ----------------------------------------
 ul.nav {
 	li {
-		display: inline-block;
+    float: left;
 		position: relative;
 		z-index: 9999;
 		font-size: 18px;
@@ -191,17 +186,30 @@ ul.nav {
 			width: auto;
 			text-align: center;
 
+      .sub-nav-icon {
+        position: absolute;
+        top: -5px;
+        left: 45%;
+
+        span {
+          display: block;
+          background: url(../images/nav-sub-nav-icon-2.png);
+          width: 9px;
+          height: 5px;
+        }
+      }
+
 			&::before {
-				content: ' ';
-				position: absolute;
-				left: 50%;
-				top: 0;
-				border-left: 1px solid @c-border;
-				border-top: 1px solid @c-border;
-				background: #fff;
-				transform: rotate(45deg) translate(-50%, -50%);
-				width: 8px;
-				height: 8px;
+				// content: ' ';
+				// position: absolute;
+				// left: 50%;
+				// top: 0;
+				// border-left: 1px solid @c-border;
+				// border-top: 1px solid @c-border;
+				// background: #fff;
+				// transform: rotate(45deg) translate(-50%, -50%);
+				// width: 8px;
+				// height: 8px;
 			}
 
 			a {
@@ -217,6 +225,7 @@ ul.nav {
 
 			li {
 				display: block;
+        float: none;
 			}
 		}
 
@@ -238,18 +247,31 @@ ul.nav {
 	.sub {
 		padding-right: 3px;
 
-		&::after {
-			content: ' ';
-			position: absolute;
-			right: 7px;
-			top: 18px;
-			width: 0;
-			height: 0;
-			border-left: 4px solid transparent;
-			border-right: 4px solid transparent;
-			border-top: 4px solid #555;
-		}
+		// &::after {
+		// 	content: ' ';
+		// 	position: absolute;
+		// 	right: 7px;
+		// 	top: 18px;
+		// 	width: 0;
+		// 	height: 0;
+		// 	border-left: 4px solid transparent;
+		// 	border-right: 4px solid transparent;
+		// 	border-top: 4px solid #555;
+		// }
 	}
+}
+
+.sub-icon {
+  //background: url(../images/sub-icon.png);
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 18px;
+  right: 7px;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 4px solid #555;
 }
 
 .ui-progressbar-mid {
@@ -767,3 +789,55 @@ body#index-body div.con {
 .jindu2 span { background-color: #55c31f; }
 .right_con h4 { color: #ffb900; }
 .log_sel { height: 400px; }
+
+
+// style of page security 
+.security-con {
+  background: white;
+}
+.security-con p {
+  text-indent: 2em;
+}
+.security-con h2.security-title-1, .security-con h2.security-title-2, .security-con h2.security-title-3, .security-con h2.security-title-4 {
+  position: relative;
+  height: 66px;    
+  left: -66px;
+}
+.security-con h2.security-title-1 span, .security-con h2.security-title-2 span, .security-con h2.security-title-3 span, .security-con h2.security-title-4 span {
+  margin-top: 18px;
+  display: inline-block;
+  color: white;
+}
+.security-con h2.security-title-1 {
+  background: url(../images/security-titlebg-1.png) no-repeat scroll left 0;
+}
+.security-con h2.security-title-1 span {
+  padding: 0 50px 0 40px;    
+  background: #1bb8e2;
+}
+.security-con h2.security-title-2 {
+  background: url(../images/security-titlebg-2.png) no-repeat scroll left 0;
+}
+.security-con h2.security-title-2 span {
+  padding: 0 50px 0 40px;    
+  background: #83c614;
+  
+}
+.security-con h2.security-title-3 {
+  background: url(../images/security-titlebg-3.png) no-repeat scroll left 0;  
+}
+.security-con h2.security-title-3 span {
+  padding: 0 50px 0 40px;    
+  background: #ffc400;
+}
+.security-con h2.security-title-4 {
+  background: url(../images/security-titlebg-4.png) no-repeat scroll left 0;  
+}
+.security-con h2.security-title-4 span {
+  padding: 0 50px 0 40px;    
+  background: #45b5a7;
+}
+.security-con div.security-content {
+  border-bottom: 1px dashed #aaa;
+  padding-bottom: 50px;
+}
