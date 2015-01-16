@@ -16,17 +16,55 @@ $(function(){
 		},100);
 	})
 
+	// 测试宽度
 	$(document).ready(function(){
 		if( $(window).width() < 1200 )
 			$('body').width(1200);
 	})
 
+	// 调节浏览器 调整宽度
 	$( window ).resize(function() {
 	  if( $(window).width() < 1200 )
 			$('body').width(1200);
 	  else 
 	  	$('body').width('');
 	});
+
+	// 菜单hover
+	$('ul.nav li.sub').hover(function(){
+		$(this).find('ul').css('display','block');
+	},function(){
+		$(this).find('ul').css('display','none');
+	})
+
+	var urlLocation = function(){
+		var urlArray = location.href.split('/'),
+			current = urlArray[urlArray.length-1],
+			isFind = false;
+
+		$('ul.nav, ul#subMenu, ul.left_ul').find('a').each(function(i,e){
+			var url = $(e).attr('href');
+			
+			if( url.search(current) != -1 ) {
+				$(e).addClass('c900');
+
+				$(e).closest('li.sub').children('a').addClass('c900');
+
+				// console.log($(e).closest('ul#subMenu').size());
+				// if( $(e).closest('ul#subMenu').size()>0 ) {
+				// 	$('ul.nav').find('a').each(function(i,e){
+				// 		if($(e).text().search('账户管理') != -1) {
+				// 			$(e).addClass('c900');
+				// 		}
+				// 	})
+				// }
+			}
+		})
+
+		console.log(current);
+	}
+	urlLocation();
+	
 	
 	//滑动效果在显示和隐藏状态之间切换
 	$("#subMenu li a").each(function(){
