@@ -1,20 +1,16 @@
-
-
 $(function(){
 	
+	window.setTimeout(function(){
+		//设置心左右高度相等
+		var lh = $("#left").height();
+		var rh = $("#right").height();
 
-	$(document).ready(function(){
-		setTimeout(function(){
-			//设置心左右高度相等
-			var lh = $("#left").height();
-			var rh = $("#right").height();
-			if(lh < rh){
-				// $("#left").height(rh - 0);
-			}else{
-				$("#right").height(lh);		
-			}
-		},100);
-	})
+		if(lh < rh){
+			// $("#left").height(rh - 0);
+		}else{
+			$("#right").height(lh);		
+		}
+	},300);
 
 	// 测试宽度
 	$(document).ready(function(){

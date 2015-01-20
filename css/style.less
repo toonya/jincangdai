@@ -16,6 +16,59 @@
     }
 }
 
+img {
+    max-width: 100%;
+}
+
+.nbr {
+    border: none;
+
+    td {
+        border: none;
+    }
+}
+
+.result-img {
+    width: 150px;
+    height: 150px;
+    background-repeat: no-repeat;
+    background-size: 150px 150px;
+    display: block;
+    margin: 0 auto;
+}
+@c-s-success: #59C130;
+@c-s-fail: #FDB82C;
+@c-s-process: #2EAFEC;
+
+.state-success {
+    .result-img {
+        background-image: url(../images/success.png);
+    }
+
+    h3 {
+        font-size: 24px;
+        color: @c-s-success;
+    }
+}.state-fail {
+    .result-img {
+        background-image: url(../images/fail.png);
+    }
+
+    h3 {
+        font-size: 24px;
+        color: @c-s-fail;
+    }
+}.state-process {
+    .result-img {
+        background-image: url(../images/process.png);
+    }
+
+    h3 {
+        font-size: 24px;
+        color: @c-s-process;
+    }
+}
+
 input[type="submit"].btn, input[type="button"].btn {
     border: none;
     height: 24px;
