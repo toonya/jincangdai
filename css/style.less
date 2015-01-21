@@ -3,6 +3,8 @@
 @c-border: #CCCCCC;
 @c-bg-y: #FDB82C;
 
+
+/* grid system  */
 .row * {
     //box-sizing: border-box;
 }
@@ -16,6 +18,54 @@
     }
 }
 
+.col-3, .col-7 {
+    float: left;
+    //box-sizing: border-box;
+}
+
+.clear-col {
+    clear: both;
+}
+
+.shaixuan .col-7 {
+    border-right: 1px solid #ddd; 
+}
+
+.shaixuan .col-3 {
+    padding: 0 30px;
+}
+
+.col-7 {
+    width: 658px;
+}
+
+.col-3 {
+    width: 219px;
+}
+
+.col-7 .sxdl dd {
+    width: auto;
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
+
+    .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+        padding: 0;
+    }
+
+    .col-border {
+        margin-right: -1px;
+    }
+} 
+
+.hidden {
+    display: none;
+}
+
+/* common style */
+
 img {
     max-width: 100%;
 }
@@ -28,45 +78,8 @@ img {
     }
 }
 
-.result-img {
-    width: 150px;
-    height: 150px;
-    background-repeat: no-repeat;
-    background-size: 150px 150px;
-    display: block;
-    margin: 0 auto;
-}
-@c-s-success: #59C130;
-@c-s-fail: #FDB82C;
-@c-s-process: #2EAFEC;
-
-.state-success {
-    .result-img {
-        background-image: url(../images/success.png);
-    }
-
-    h3 {
-        font-size: 24px;
-        color: @c-s-success;
-    }
-}.state-fail {
-    .result-img {
-        background-image: url(../images/fail.png);
-    }
-
-    h3 {
-        font-size: 24px;
-        color: @c-s-fail;
-    }
-}.state-process {
-    .result-img {
-        background-image: url(../images/process.png);
-    }
-
-    h3 {
-        font-size: 24px;
-        color: @c-s-process;
-    }
+label {
+    cursor: pointer;
 }
 
 input[type="submit"].btn, input[type="button"].btn {
@@ -103,31 +116,62 @@ input[type="submit"].btn, input[type="button"].btn {
     }
 }
 
-/* col */
-.col-3, .col-7 {
-    float: left;
-    //box-sizing: border-box;
+.text-center {
+    text-align: center;
 }
 
-.clear-col {
-    clear: both;
+.text-left {
+    text-align: left;
 }
 
-.shaixuan .col-7 {
-    border-right: 1px solid #ddd; 
+.col-border {
+    border-right: 1px solid @c-border;
 }
 
-.shaixuan .col-3 {
-    padding: 0 30px;
+
+/* state of user center operation */
+@c-s-success: #59C130;
+@c-s-fail: #FDB82C;
+@c-s-process: #2EAFEC;
+
+.result-img {
+    width: 150px;
+    height: 150px;
+    background-repeat: no-repeat;
+    background-size: 150px 150px;
+    display: block;
+    margin: 0 auto;
 }
 
-.col-7 {
-    width: 658px;
+.state-success {
+    .result-img {
+        background-image: url(../images/success.png);
+    }
+
+    h3 {
+        font-size: 24px;
+        color: @c-s-success;
+    }
+}.state-fail {
+    .result-img {
+        background-image: url(../images/fail.png);
+    }
+
+    h3 {
+        font-size: 24px;
+        color: @c-s-fail;
+    }
+}.state-process {
+    .result-img {
+        background-image: url(../images/process.png);
+    }
+
+    h3 {
+        font-size: 24px;
+        color: @c-s-process;
+    }
 }
 
-.col-3 {
-    width: 219px;
-}
 
 @col-padding: 30px;
 .transfer-list {
@@ -151,9 +195,7 @@ input[type="submit"].btn, input[type="button"].btn {
     }
 }
 
-.col-7 .sxdl dd {
-    width: auto;
-}
+
 
 .shaixuan .col-3 a {
     display: block;
@@ -166,26 +208,13 @@ input[type="submit"].btn, input[type="button"].btn {
     margin-bottom: 18px;
 }
 
-.text-center {
-    text-align: center;
-}
-
-label {
-    cursor: pointer;
-}
-
-.text-left {
-    text-align: left;
-}
-
-.col-border {
-    border-right: 1px solid @c-border;
-}
 
 .tz_tab tr.ft12 td{
     font-size: 12px;
 }
 
+
+/* 星标 */
 .rank {
     position: relative;
     display: block;
@@ -241,23 +270,6 @@ label {
     .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-6, .col-xs-9, .col-xs-10 {
         padding: 0;
     }
-}
-
-.row {
-    margin-left: 0;
-    margin-right: 0;
-
-    .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
-        padding: 0;
-    }
-
-    .col-border {
-        margin-right: -1px;
-    }
-} 
-
-.hidden {
-    display: none;
 }
 
 .gonggao {
@@ -350,6 +362,12 @@ label {
 // ----------------------------------------
 // ! navigation
 // ----------------------------------------
+/* header & navigation */
+.logo {
+    width: 434px;
+    height: 54px;
+}
+
 ul.nav {
     li {
         float: left;
