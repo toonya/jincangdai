@@ -123,6 +123,9 @@ h1,h2,h3,h4{ font-weight:normal;}
 .blue { color: #21aeef; }
 .green { color: #55c31f; }
 .yellow { color: #ffb900;}
+.bg-blue { background-color: #23a4df; }
+.bg-green { background-color: #34bd1d; }
+.bg-yellow { background-color: #ffb900;}
 
 /*表单*/
 .text,.select{ height:20px; line-height:20px; padding:1px 2px; border:1px solid #d8d8d8;  vertical-align:middle; resize:none;}
@@ -156,11 +159,12 @@ h1,h2,h3,h4{ font-weight:normal;}
 .btn{ height:24px; line-height:24px; display:inline-block; background-position:0 -70px; cursor:pointer;}
 .btn span{ height:24px; display:inline-block; background-position:right -70px; margin-left:20px; padding-right:20px; margin-right:-5px; color:#fff; }
 
-.btn2,.btn3{ height:36px; line-height:36px; display:inline-block; background-position:0 -100px; cursor:pointer;}
-.btn2 span,.btn3 span{ height:36px; display:inline-block; background-position:right -100px; margin-left:30px; padding-right:30px; margin-right:-10px; color:#fff; font-size:18px; }
+.btn2,.btn3, .btn4{ height:36px; line-height:36px; display:inline-block; background-position:0 -100px; cursor:pointer;}
+.btn2 span,.btn3 span, .btn4 span { height:36px; display:inline-block; background-position:right -100px; margin-left:30px; padding-right:30px; margin-right:-10px; color:#fff; font-size:18px; }
 
 .btn3{background-position:0 -140px;}
 .btn3 span{ background-position:right -140px;}
+
 
 /* ------------------------ 头部 ---------------------------- */
 .top{ width:auto; height:30px; line-height:30px; background-color:#ffb900; color:#fbfbfb;}
@@ -224,3 +228,4 @@ html body { background: #f6f6f6; }
 .more, .more span { background: #55c31f; }
 .btn2 { background: #ffb900; }
 .pop_tit { background: #ffb900; }
+.btn4 { background: #f35b08; }

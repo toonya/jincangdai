@@ -2248,15 +2248,6 @@ body#index-body div.con {
   color: white;
   width: 100%;
 }
-.bg-blue {
-  background: #81b0c5;
-}
-.bg-green {
-  background: #3ea96b;
-}
-.bg-yellow {
-  background: #bb9738;
-}
 .bg-white {
   background: white;
 }
@@ -2357,3 +2348,7 @@ body#index-body div.con {
   border-bottom: 1px dashed #aaa;
   padding-bottom: 50px;
 }
+.loan-table-3 tr:nth-child(odd) {
+  background: #dbffd8;
+}
+.borb { padding-bottom: 6px; }
