@@ -78,6 +78,24 @@ img {
     }
 }
 
+.borb {
+    border-bottom: 1px solid @c-border;
+    padding-bottom: 36px;
+}
+
+.line-dotted {
+    height: 1px;
+    border-top: 1px dotted @c-border;
+}
+
+.bor-light {
+    border-color: @c-border+#111;
+}
+
+.bor-lighter {
+    border-color: @c-border+#222;
+}
+
 label {
     cursor: pointer;
 }
@@ -312,6 +330,20 @@ input[type="submit"].btn, input[type="button"].btn {
             &:hover {
                 color: #ccc;
             }
+        }
+    }
+}
+
+/* un Authentication case */
+.un-Authentication {
+    .tjcard {
+        width: 200px;
+        height: 80px;
+        padding: 10px 0;
+        text-align: center;
+
+        a i {
+            margin: 0 auto;
         }
     }
 }
@@ -953,7 +985,7 @@ body#index-body div.con {
     background: #fff;
 }
 .loan-item {
-    width: 32%;
+    width: 48%;
     margin-right: 11px;
     overflow: hidden;
     border-radius: 5px;

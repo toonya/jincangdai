@@ -1448,6 +1448,20 @@ img {
 .nbr td {
   border: none;
 }
+.borb {
+  border-bottom: 1px solid #cccccc;
+  padding-bottom: 36px;
+}
+.line-dotted {
+  height: 1px;
+  border-top: 1px dotted #cccccc;
+}
+.bor-light {
+  border-color: #dddddd;
+}
+.bor-lighter {
+  border-color: #eeeeee;
+}
 label {
   cursor: pointer;
 }
@@ -1646,6 +1660,16 @@ input[type="button"].btn.big {
 }
 .gonggao .more a:hover {
   color: #ccc;
+}
+/* un Authentication case */
+.un-Authentication .tjcard {
+  width: 200px;
+  height: 80px;
+  padding: 10px 0;
+  text-align: center;
+}
+.un-Authentication .tjcard a i {
+  margin: 0 auto;
 }
 .file-upload {
   display: block;
@@ -2208,7 +2232,7 @@ body#index-body div.con {
   background: #fff;
 }
 .loan-item {
-  width: 32%;
+  width: 48%;
   margin-right: 11px;
   overflow: hidden;
   border-radius: 5px;

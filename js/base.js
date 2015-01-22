@@ -12,6 +12,19 @@ $(function(){
 		}
 	},300);
 
+	var sameH = function() {
+		var h = 0;
+
+		$('.sameH').each(function(i,e){
+			if( $(e).height() > h )
+				h = $(e).height();
+		}).height(h);
+	}
+
+	sameH();
+
+
+
 	// 测试宽度
 	$(document).ready(function(){
 		if( $(window).width() < 1200 )
@@ -45,23 +58,12 @@ $(function(){
 				$(e).addClass('c900');
 
 				$(e).closest('li.sub').children('a').addClass('c900');
-
-				// console.log($(e).closest('ul#subMenu').size());
-				// if( $(e).closest('ul#subMenu').size()>0 ) {
-				// 	$('ul.nav').find('a').each(function(i,e){
-				// 		if($(e).text().search('账户管理') != -1) {
-				// 			$(e).addClass('c900');
-				// 		}
-				// 	})
-				// }
 			}
 		})
-
-		console.log(current);
 	}
+
 	urlLocation();
-	
-	
+
 	//滑动效果在显示和隐藏状态之间切换
 	$("#subMenu li a").each(function(){
 		$(this).click(function(){
@@ -77,18 +79,23 @@ $(function(){
 			$(".tradecon:eq("+ index +")").removeClass("hide").siblings(".tradecon").addClass("hide");	
 		});
 	});
+
 	
-})
-
-
-
-//图片切换
-$(function(){
+	// 图片切换
 	var numpic = $('#slides li').size()-1;
 	var nownow = 0;
 	var inout = 0;
 	var TT = 0;
 	var SPEED = 5000;
+
+	function ADDLI(){
+		//var lilicount = numpic + 1;
+		for(var i = 0; i <= numpic; i++){
+			ulcontent += '<li>' + '<a>' + (i+1) + '</a>' + '</li>';
+		}
+		
+		$('#slides').after(ulstart + ulcontent + ulend);
+	}
     
 	$('#slides li').each(function() {
 		var bgcolor = $(this).attr('bgcolor');
@@ -101,21 +108,14 @@ $(function(){
 	var ulstart = '<ul id="pagination">',
 		ulcontent = '',
 		ulend = '</ul>';
+
 	ADDLI();
+
 	var pagination = $('#pagination li');
 	var paginationwidth = $('#pagination').width();
 	//$('#pagination').css('margin-left',(470-paginationwidth))
 	
 	pagination.eq(0).addClass('current')
-		
-	function ADDLI(){
-		//var lilicount = numpic + 1;
-		for(var i = 0; i <= numpic; i++){
-			ulcontent += '<li>' + '<a>' + (i+1) + '</a>' + '</li>';
-		}
-		
-		$('#slides').after(ulstart + ulcontent + ulend);	
-	}
 
 	pagination.on('click',DOTCHANGE)
 	
@@ -166,6 +166,11 @@ $(function(){
 	}
 	
 	TT = setTimeout(GOGO, SPEED); 
+
+
+
+
+
 
 	// ----------------------------------------
 	// ! file select
