@@ -51,15 +51,23 @@ $(function(){
 			current = urlArray[urlArray.length-1],
 			isFind = false;
 
-		$('ul.nav, ul#subMenu, ul.left_ul').find('a').each(function(i,e){
-			var url = $(e).attr('href');
-			
-			if( url.search(current) != -1 ) {
-				$(e).addClass('c900');
+		current = current.replace('?', '\\u003F');
 
-				$(e).closest('li.sub').children('a').addClass('c900');
-			}
-		})
+		if(current==''){
+		     //空表示为主页，
+		      $('ul.nav a:first').addClass('c900');
+    	}else{   
+
+			$('ul.nav, ul#subMenu, ul.left_ul').find('a').each(function(i,e){
+				var url = $(e).attr('href');
+				
+				if( url.search(current) != -1 ) {
+					$(e).addClass('c900');
+
+					$(e).closest('li.sub').children('a').addClass('c900');
+				}
+			})
+		}
 	}
 
 	urlLocation();
