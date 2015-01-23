@@ -2247,6 +2247,7 @@ body#index-body div.con {
 .loan-item h2 {
   color: white;
   width: 100%;
+  opacity: 0.7;
 }
 .bg-white {
   background: white;
@@ -2365,4 +2366,10 @@ body#index-body div.con {
   display: inline-block;
   margin-right: 24px;
 }
+
+.loan-item:hover h2 {
+  opacity: 1;
+  filter: alpha(opacity=100); 
+}
+
 
