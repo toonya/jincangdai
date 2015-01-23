@@ -88,6 +88,8 @@ $(function(){
 					$(e).closest('li.sub').children('a').addClass('c900');
 				}
 			})
+
+			$('ul#subMenu a.c900').closest('ol').css('display','block').siblings('i').addClass('open');
 		}
 	}
 
