@@ -159,8 +159,8 @@ h1,h2,h3,h4{ font-weight:normal;}
 .btn{ height:24px; line-height:24px; display:inline-block; background-position:0 -70px; cursor:pointer;}
 .btn span{ height:24px; display:inline-block; background-position:right -70px; margin-left:20px; padding-right:20px; margin-right:-5px; color:#fff; }
 
-.btn2,.btn3, .btn4{ height:36px; line-height:36px; display:inline-block; background-position:0 -100px; cursor:pointer;}
-.btn2 span,.btn3 span, .btn4 span { height:36px; display:inline-block; background-position:right -100px; margin-left:30px; padding-right:30px; margin-right:-10px; color:#fff; font-size:18px; }
+.btn2,.btn3, .btn4, .btn5{ height:36px; line-height:36px; display:inline-block; background-position:0 -100px; cursor:pointer;}
+.btn2 span,.btn3 span, .btn4 span, .btn5 span { height:36px; display:inline-block; background-position:right -100px; margin-left:30px; padding-right:30px; margin-right:-10px; color:#fff; font-size:18px; }
 
 .btn3{background-position:0 -140px;}
 .btn3 span{ background-position:right -140px;}
@@ -229,3 +229,4 @@ html body { background: #f6f6f6; }
 .btn2 { background: #ffb900; }
 .pop_tit { background: #ffb900; }
 .btn4 { background: #f35b08; }
+.btn5 { background: #4cb1df; }
