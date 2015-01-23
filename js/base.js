@@ -24,6 +24,27 @@ $(function(){
 	sameH();
 
 
+	// subMenu fold effect
+
+	$('#subMenu i.png').click(function(){
+		var state = $(this).hasClass('open');
+
+		if(state) {
+			$(this).siblings('ol').slideUp();
+		}
+
+		else {
+			$(this).siblings('ol').slideDown(function(){
+				$(this).css('zoom',1)
+			});
+		}
+
+		$(this).toggleClass('open');
+	})
+
+	//$('#subMenu ol').
+
+
 
 	// 测试宽度
 	$(document).ready(function(){

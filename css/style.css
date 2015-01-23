@@ -1671,6 +1671,26 @@ input[type="button"].btn.big {
 .un-Authentication .tjcard a i {
   margin: 0 auto;
 }
+/* subMenu */
+.left_ul li i {
+  background: url(../images/arrow-close.png) no-repeat;
+  width: 10px;
+  height: 6px;
+  cursor: pointer;
+}
+.left_ul li i.open {
+  background: url(../images/arrow-open.png) no-repeat;
+}
+.left_ul li ol {
+  display: none;
+  position: relative;
+  z-index: 100;
+}
+.left_ul li {
+  position: relative;
+  z-index: 10;
+  background: #f0f0f0;
+}
 .file-upload {
   display: block;
   text-align: center;
@@ -2248,6 +2268,20 @@ body#index-body div.con {
   color: white;
   width: 100%;
   opacity: 0.7;
+  filter: alpha(opacity=70);
+}
+.loan-item:hover h2 {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+.bg-blue {
+  background: #81b0c5;
+}
+.bg-green {
+  background: #3ea96b;
+}
+.bg-yellow {
+  background: #bb9738;
 }
 .bg-white {
   background: white;
@@ -2279,9 +2313,6 @@ body#index-body div.con {
 }
 .query_qzsj i {
   background: url(../images/calendar.png) no-repeat;
-}
-.left_ul li i {
-  background: url(../images/r-arrow.png) no-repeat;
 }
 .i_sf {
   background: url(../images/namecard.png) no-repeat;
@@ -2349,12 +2380,12 @@ body#index-body div.con {
   border-bottom: 1px dashed #aaa;
   padding-bottom: 50px;
 }
-
 .loan-table-3 tr:nth-child(odd) {
   background: #dbffd8;
 }
-.borb { padding-bottom: 6px; }
-
+.borb {
+  padding-bottom: 6px;
+}
 /* ZJL's style */
 .state .on {
   color: #fff;
@@ -2366,10 +2397,3 @@ body#index-body div.con {
   display: inline-block;
   margin-right: 24px;
 }
-
-.loan-item:hover h2 {
-  opacity: 1;
-  filter: alpha(opacity=100); 
-}
-
-
