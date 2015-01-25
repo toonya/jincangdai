@@ -1413,7 +1413,7 @@ p.loan-apply-con {
   width: 219px;
 }
 .col-7 .sxdl dd {
-  width: auto;
+  width: 560px;
 }
 .row {
   margin-left: 0;
@@ -2402,6 +2402,55 @@ body#index-body div.con {
 }
 .borb {
   padding-bottom: 6px;
+}
+.sxdl dd .fit {
+  width: 60px;
+}
+/* account page */
+.new-rzzt {
+  margin-top: 24px;
+}
+.new-rzzt .item {
+  display: block;
+  float: left;
+  width: 64px;
+  text-align: center;
+  color: #999;
+}
+.new-rzzt .item i {
+  display: block;
+  width: 48px;
+  height: 48px;
+  margin: 0 auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.new-rzzt .certify i {
+  background-image: url(../images/certify.png);
+}
+.new-rzzt .phone i {
+  background-image: url(../images/phone.png);
+}
+.new-rzzt .email i {
+  background-image: url(../images/email.png);
+}
+.new-rzzt .card i {
+  background-image: url(../images/card.png);
+}
+.new-rzzt .un {
+  color: #08c;
+}
+.new-rzzt .un.certify i {
+  background-image: url(../images/un-certify.png);
+}
+.new-rzzt .un.phone i {
+  background-image: url(../images/un-phone.png);
+}
+.new-rzzt .un.email i {
+  background-image: url(../images/un-email.png);
+}
+.new-rzzt .un.card i {
+  background-image: url(../images/un-card.png);
 }
 /* ZJL's style */
 .state .on {
