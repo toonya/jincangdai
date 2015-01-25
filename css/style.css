@@ -1560,6 +1560,23 @@ input[type="button"].btn.big {
 .tz_tab tr.ft12 td {
   font-size: 12px;
 }
+/* index */
+.tongji dt,
+.tongji dd {
+  float: left;
+}
+.tongji dt {
+  width: 80px;
+  height: 120px;
+}
+.tongji dd {
+  width: 175px;
+  padding-left: 20px;
+}
+.tongji .tj_tzje,
+.tongji .tj_zqsy {
+  background-position: 0 15px;
+}
 /* 星标 */
 .rank {
   position: relative;
