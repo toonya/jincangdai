@@ -1546,7 +1546,11 @@ input[type="button"].btn.big {
   width: 601px;
 }
 .transfer-list .col-xs-8 .col-xs-4 {
-  width: 169px;
+  width: 199px;
+}
+.transfer-list .col-xs-8 .col-xs-4 dd {
+  float: left;
+  width: 199px;
 }
 .shaixuan .col-3 a {
   display: block;
