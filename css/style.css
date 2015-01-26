@@ -2463,3 +2463,9 @@ body#index-body div.con {
   display: inline-block;
   margin-right: 24px;
 }
+.gonggao {
+  padding: 12px 20px;
+}
+.gonggao .more {
+  right:40px;
+}
