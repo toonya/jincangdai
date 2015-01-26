@@ -26,20 +26,24 @@ $(function(){
 
 	// subMenu fold effect
 
-	$('#subMenu i.png').click(function(){
-		var state = $(this).hasClass('open');
+	$('#subMenu li').click(function(e){
 
-		if(state) {
-			$(this).siblings('ol').slideUp();
+		if( $(this).children('ol').size() ) {
+
+			var state = $(this).hasClass('open');
+
+			if(state) {
+				$(this).children('ol').slideUp();
+			}
+
+			else {
+				$(this).children('ol').slideDown(function(){
+					$(this).css('zoom',1);
+				});
+			}
+
+			$(this).toggleClass('open');
 		}
-
-		else {
-			$(this).siblings('ol').slideDown(function(){
-				$(this).css('zoom',1)
-			});
-		}
-
-		$(this).toggleClass('open');
 	})
 
 	//$('#subMenu ol').
@@ -89,7 +93,7 @@ $(function(){
 				}
 			})
 
-			$('ul#subMenu a.c900').closest('ol').css('display','block').siblings('i').addClass('open');
+			$('ul#subMenu a.c900').closest('ol').css('display','block').parent('li').addClass('open');
 		}
 	}
 
