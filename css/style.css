@@ -2456,6 +2456,12 @@ body#index-body div.con {
 .new-rzzt .un.card i {
   background-image: url(../images/un-card.png);
 }
+.gonggao {
+  padding: 12px 20px;
+}
+.gonggao .more {
+  right: 40px;
+}
 /* ZJL's style */
 .state .on {
   color: #fff;
@@ -2466,10 +2472,4 @@ body#index-body div.con {
 .state a {
   display: inline-block;
   margin-right: 24px;
-}
-.gonggao {
-  padding: 12px 20px;
-}
-.gonggao .more {
-  right:40px;
 }
