@@ -1683,6 +1683,21 @@ input[type="button"].btn.big {
 .gonggao .more a:hover {
   color: #ccc;
 }
+.btn-more {
+  width: 120px;
+  background: none;
+  margin: 0 auto;
+}
+.btn-more a {
+  color: #888;
+  border: 1px solid #888;
+  border-radius: 12px;
+  padding: 3px 16px;
+  line-height: 34px;
+}
+.btn-more a:hover {
+  color: #ccc;
+}
 /* un Authentication case */
 .un-Authentication .tjcard {
   width: 200px;
