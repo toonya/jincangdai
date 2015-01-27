@@ -2582,6 +2582,25 @@ body#index-body div.con {
 .login_layer {
   width: 1100px;
 }
+/* notice */
+.notice {
+  padding: 6px 12px;
+  position: relative;
+  background: #f4f4f4;
+}
+.notice i {
+  background: url(../images/notice.png) no-repeat center center;
+  width: 24px;
+  height: 24px;
+  float: left;
+}
+.notice .content {
+  float: left;
+  padding-left: 12px;
+}
+.notice .content p {
+  color: #666;
+}
 /* ZJL's style */
 .state .on {
   color: #fff;
