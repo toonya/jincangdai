@@ -2601,6 +2601,9 @@ body#index-body div.con {
 .notice .content p {
   color: #666;
 }
+.tz_tab td.xmm img {
+  margin-top: 17px;
+}
 /* ZJL's style */
 .state .on {
   color: #fff;
