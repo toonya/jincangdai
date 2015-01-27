@@ -46,6 +46,12 @@ $(function(){
 		}
 	})
 
+	$('#subMenu li a').click(function(e){
+		if($(this).siblings('ol').size()>=1) {
+			e.preventDefault();
+		}
+	})
+
 	//$('#subMenu ol').
 
 

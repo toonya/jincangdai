@@ -1921,12 +1921,12 @@ ul.nav .sub {
 .ui-progressbar-mid {
   margin: 6px auto;
   display: block;
-  width: 44px;
-  height: 44px;
-  line-height: 44px;
+  width: 46px;
+  height: 46px;
+  line-height: 46px;
   font-size: 8px;
   text-align: center;
-  background: url(../images/progressbar.png);
+  background: url(../images/progressbar.png) no-repeat;
 }
 .tongji dl dt {
   width: 124px;
@@ -2554,19 +2554,6 @@ body#index-body div.con {
 .gonggao .more {
   right: 40px;
 }
-.security-con.con .security-img-5 {
-  height: 302px;
-}
-.security-con.con .security-s { 
-  padding-left: 40px;
-  color: #f8f8f8;
-}
-.security-con.con .security-s-2 {
-  padding-right: 40px;
-}
-.security-con.con .security-s-4 {
-  padding-right: 44px;
-}
 /* ZJL's style */
 .state .on {
   color: #fff;
@@ -2578,4 +2565,3 @@ body#index-body div.con {
   display: inline-block;
   margin-right: 24px;
 }
-
