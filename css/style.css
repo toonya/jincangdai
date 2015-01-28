@@ -2423,9 +2423,6 @@ body#index-body div.con {
 .borb {
   padding-bottom: 6px;
 }
-.sxdl dd .fit {
-  width: 60px;
-}
 /* security */
 .security-con.con {
   padding: 39px 86px;
@@ -2603,6 +2600,27 @@ body#index-body div.con {
 }
 .tz_tab td.xmm img {
   margin-top: 17px;
+}
+.logsel .yzm {
+  margin-top: 0;
+  height: 36px;
+}
+/* new shaixuan */
+table.sx {
+  font-size: 14px;
+}
+table.sx a {
+  padding: 3px 18px;
+  white-space: nowrap;
+  font-size: inherit;
+}
+table.sx a.on {
+  background-color: #ffb900;
+  color: #fff;
+  border-radius: 20px;
+}
+table.sx td {
+  padding: 10px 4px 0 0;
 }
 /* ZJL's style */
 .state .on {
