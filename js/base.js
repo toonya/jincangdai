@@ -82,7 +82,7 @@ $(function(){
 			current = urlArray[urlArray.length-1],
 			isFind = false;
 
-		current = current.replace('?', '\\u003F');
+		//current = current.replace('?', '\\u003F');
 
 		if(current==''){
 		     //空表示为主页，
@@ -90,9 +90,10 @@ $(function(){
     	}else{   
 
 			$('ul.nav, ul#subMenu, ul.left_ul').find('a').each(function(i,e){
-				var url = $(e).attr('href');
+				var url = $(e).attr('href').split('/'),
+					c = url[url.length-1];
 				
-				if( url.search(current) != -1 ) {
+				if( c == current ) {
 					$(e).addClass('c900');
 
 					$(e).closest('li.sub').children('a').addClass('c900');
