@@ -19,9 +19,16 @@ $(function(){
 			if( $(e).height() > h )
 				h = $(e).height();
 		}).height(h);
+
 	}
 
 	sameH();
+
+
+	// background-color-setter
+
+	$('.loan-table-3 tr:even').css('background-color','#dbffd8');
+	$('.loan-table-1 tr:even').css('background-color','#d2f1ff');
 
 
 	// subMenu fold effect
